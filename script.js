@@ -1,7 +1,7 @@
 var Temp = 0;
 window.addEventListener("wheel", function(x){
     Temp += Math.sign(x.deltaY);
-    if(Temp < 18){
+    if(Temp <= 16){
         if(Temp <= 0){
             Temp = 0; 
             document.getElementById("Header").style.color = 'hsl(211, 0%, 100%)';
