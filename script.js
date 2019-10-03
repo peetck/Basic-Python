@@ -19,7 +19,7 @@ window.addEventListener("wheel", function(x){
             document.getElementById("like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("temp_like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("Invite").style.color = 'hsl(211, 100%, 50%)';
-        }if(Temp >= 11 && Temp < 16){
+        }if(Temp >= 11 && Temp <= 16){
             document.getElementById("like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-((Temp-11)*10))+'%)';
             document.getElementById("temp_like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-((Temp-11)*10))+'%)';
             document.getElementById("Invite").style.color = 'hsl(211, 100%, 50%)';
@@ -27,7 +27,7 @@ window.addEventListener("wheel", function(x){
             document.getElementById("Invite").style.color = 'hsl(211, '+(Number(Temp!=17)*100)+'%, '+(100-((Temp-17)*10))+'%)';
         }
     }else{
-        Temp = 17;
+        Temp = 16;
     }
     console.log(Temp);
 });
