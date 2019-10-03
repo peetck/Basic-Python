@@ -1,33 +1,33 @@
 var Temp = 0;
-window.addEventListener("wheel", function(x){
-    Temp += Math.sign(x.deltaY);
-    if(Temp <= 16){
-        if(Temp <= 0){
-            Temp = 0; 
+var value_temp = 0
+window.addEventListener("wheel", function(value){
+    Temp += Math.sign(value.deltaY);
+});
+
+window.addEventListener("scroll", function(){
+    let scroll = document.documentElement.scrollTop;
+        if(scroll == 0){
             document.getElementById("Header").style.color = 'hsl(211, 0%, 100%)';
         }
-        if(Temp >= 1 && Temp < 6){
-            document.getElementById("Header").style.color = 'hsl(211, 100%, '+(100-(Temp*10))+'%)';
+        if(document.documentElement.scrollTop >= 1 && document.documentElement.scrollTop < 500){
+            document.getElementById("Header").style.color = 'hsl(211, 100%, '+(100-(scroll/10))+'%)';
             document.getElementById("why").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("temp_why").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("temp_like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("Invite").style.color = 'hsl(211, 100%, 50%)';
-        }if(Temp >= 6 && Temp <= 11){
-            document.getElementById("why").style.color = 'hsl(211, '+(Number(Temp!=6)*100)+'%, '+(100-((Temp-6)*10))+'%)';
-            document.getElementById("temp_why").style.color = 'hsl(211, '+(Number(Temp!=6)*100)+'%, '+(100-((Temp-6)*10))+'%)';
+        }if(document.documentElement.scrollTop >= 500 && document.documentElement.scrollTop < 1000){
+            document.getElementById("why").style.color = 'hsl(211, '+(Number(Temp!=500)*100)+'%, '+(100-(((scroll/100)-5)*10))+'%)';
+            document.getElementById("temp_why").style.color = 'hsl(211, '+(Number(Temp!=500)*100)+'%, '+(100-(((scroll/100)-5)*10))+'%)';
             document.getElementById("like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("temp_like").style.color = 'hsl(211, 100%, 50%)';
             document.getElementById("Invite").style.color = 'hsl(211, 100%, 50%)';
-        }if(Temp >= 11 && Temp <= 16){
-            document.getElementById("like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-((Temp-11)*10))+'%)';
-            document.getElementById("temp_like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-((Temp-11)*10))+'%)';
+        }if(document.documentElement.scrollTop >= 1000 && document.documentElement.scrollTop < 1582){
+            document.getElementById("like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-(((scroll/100)-11)*10))+'%)';
+            document.getElementById("temp_like").style.color = 'hsl(211, '+(Number(Temp!=11)*100)+'%, '+(100-(((scroll/100)-11)*10))+'%)';
             document.getElementById("Invite").style.color = 'hsl(211, 100%, 50%)';
-        }if(Temp >= 16){
-            document.getElementById("Invite").style.color = 'hsl(211, '+(Number(Temp!=17)*100)+'%, '+(100-((Temp-17)*10))+'%)';
+        }if(document.documentElement.scrollTop == 1582){
+            document.getElementById("Invite").style.color = 'hsl(211, '+(Number(Temp!=17)*100)+'%, '+(100-((Math.floor(scroll/100)-15)*10))+'%)';
         }
-    }else{
-        Temp = 16;
-    }
-    console.log(Temp);
+    console.log(scroll);
 });
