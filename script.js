@@ -15,7 +15,8 @@ window.addEventListener("scroll", function(){
     invite = document.getElementById("Invite");
     div = document.getElementById("createbutton");
     button_div = document.createElement("button");
-    button_div.setAttribute("class", "btn btn-secondary btn-lg");
+    button_div.setAttribute("class", "btn btn-outline-dark btn-lg btn-block");
+    button_div.setAttribute("href", "introduction.html");
     button_div.innerHTML = "Enroll";
         if(scroll == 0){
             document.getElementById("Header").style.color = 'hsl(211, 0%, 100%)';
