@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Itim|Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Athiti&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#home{
+    height: 100%;
+    width: 100%;
+}
+
+.kanit{
+    font-family: 'Athiti', sans-serif;
+}
+
+#install{
+    background-color: #FFA69E;
+}
+
+#var{
+    background-color: #A5FFD6;
+}
+
+#inp{
+    background-color: #84DCC6;
+}
+
