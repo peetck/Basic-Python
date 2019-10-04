@@ -102,13 +102,12 @@
                             with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
                             The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
                             non-characteristic words etc.</p>
+                            <a href="#menu-toggle" class="btn btn-outline-dark menu-toggle">ซ่อน Menu</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <script src="normal.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -120,6 +119,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        $(".menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 
 </html>
