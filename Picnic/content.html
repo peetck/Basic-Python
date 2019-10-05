@@ -9,36 +9,67 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a href="index.html" class="navbar-brand kanit">Basic Python</a>
+<body id="main">
+    <br>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a href="index.html" class="navbar-brand athiti"> <img src="images/py_logo.png" width="30" alt=""> Basic Python</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a href="#install" class="nav-item nav-link active kanit">Installation</a>
-                <a href="#var" class="nav-item nav-link active kanit">Varieble</a>
-                <a href="#" class="nav-item nav-link active kanit">I/O(Input/Output)</a>
-                <a href="#" class="nav-item nav-link active kanit">Operation</a>
-                <a href="#" class="nav-item nav-link active kanit">Logical Operation</a>
-                <a href="#" class="nav-item nav-link active kanit">String</a>
-                <a href="#" class="nav-item nav-link active kanit">String format</a>
-                <a href="#" class="nav-item nav-link active kanit">Function</a>
+                <a href="#main" class="nav-item nav-link active athiti">Installation</a>
+                <a href="#varieble" class="nav-item nav-link active athiti">Varieble</a>
+                <a href="#" class="nav-item nav-link active athiti">I/O(Input/Output)</a>
+                <a href="#" class="nav-item nav-link active athiti">Operation</a>
+                <a href="#" class="nav-item nav-link active athiti">Logical Operation</a>
+                <a href="#" class="nav-item nav-link active athiti">String</a>
+                <a href="#" class="nav-item nav-link active athiti">String format</a>
+                <a href="#" class="nav-item nav-link active athiti">Function</a>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid kanit p-0">
+    <div class="container-fluid athiti p-0">
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="install">Installation</h1>
         <h5 class="p-5 mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque repudiandae nisi numquam, ab reiciendis commodi quia voluptate dolorem placeat officia vitae animi, tempore modi sequi aliquid hic cupiditate minus.
-        </h5>
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="var">ตัวแปร</h1>
+                <p>ในการติดตั้งภาษา Python นั้น วิธีการคือให้เราเข้าไปที่เว็บไซต์ <a href="https://www.python.org/">python.org</a> จากนั้นไปที่หน้า download และเลือกเวอร์ชั่นและระบบปฏิบัติการที่ต้องการ (เนื้อหาในเว็บไซต์นี้จะเป็น Python 3.7.4)</p>
+                <center><img src="images/install.png" alt="can't load install.png" class="img-fluid mb-3"></center>
+                <p>ในตอนติดตั้งนั้นให้เราเลือกช่องที่เขียนไว้ว่า "Add Python 3.7 to PATH" เพื่อที่จะทําให้เราสามารถเรียกใช้ Python ผ่านทาง CMD ของเราได้นั้นเอง</p>
+                <center><img src="images/install_path.png" alt="can't load install_path.png" class="img-fluid mb-3"></center>
+                <p>จากนั้นเราสามารถทดสอบได้ว่าเราติดตั้งเรียบร้อยแล้วด้วยการเปิด CMD แล้วพิมพ์คําว่า "py"</p>
+                <center><img src="images/install_py.png" alt="can't load install_py" class="img-fluid mb-3"></center>
+                <hr>
+                <p>ในการรันภาษา Python นั้นเราสามารถรัน Python ได้หลักๆ2วิธีตามนี้เลยครับ <ul>
+                    <li>Interactive Mode คือการที่เราพิมพ์ Code ที่ต้องการจะรันในแต่ละบรรทัดและผลลัพธ์ก็จะออกมาตามแต่ละบรรทัด</li>
+                    <li>Script Mode คือการที่เรามีไฟล์ .py ที่เป็นโค้ดแล้วนํามารัน</li>
+                </ul></p>
+                <p>การใช้งาน Interactive Mode ง่ายๆเลยครับเราก็เปิด cmd หรือจะเข้าตัว IDLE ที่มีมาให้หลังจากติดตั้ง Python แล้วก็ได้ครับ</p>
+                <center><img src="images/python_idle.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd.png" alt="" class="img-fluid mb-3"></center>
+
+                <hr>
+                <p>การใช้งาน Script Mode เราสามารถทําได้โดยการเปิด cmd และพิมพ์ "py -3 <ชื่อไฟล์>.py" จากนั้น Python ก็จะนําโค้ดที่อยู่ข้างในไฟล์นั้นมารัน
+                หากเราใช้ IDLE ของ Python ก็สามารถรันได้โดยการกด F5 ครับ</p>
+                <center><img src="images/python_idle2.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd2.png" alt="" class="img-fluid mb-3"></center>
+
+            </h5>
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="varieble">Varieble</h1>
         <h5 class="p-5 mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque repudiandae nisi numquam, ab reiciendis commodi quia voluptate dolorem placeat officia vitae animi, tempore modi sequi aliquid hic cupiditate minus.
+                Varieble หรือตัวแปร จะเป็นการกําหนดค่าอะไรบางอย่างให้กับตัวแปรที่เราตั้งขึ้นมา (เหมือนตัวแปรใน คณิตศาสตร์เลยครับ) ยกตัวอย่างเช่น
+
         </h5>
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="inp">Input & Output</h1>
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="input-output">Input & Output</h1>
+        <h5 class="p-5 mb-1"></h5>
+
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="operation">Operation</h1>
+        <h5 class="p-5 mb-1"></h5>
+
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="logical-operation">Logical Operation</h1>
+        <h5 class="p-5 mb-1"></h5>
+
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="string">String</h1>
+        <h5 class="p-5 mb-1"></h5>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
