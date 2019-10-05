@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Athiti&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:200&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -11,8 +11,8 @@ html, body{
     width: 100%;
 }
 
-.athiti{
-    font-family: 'Athiti', sans-serif;
+.kanit{
+    font-family: 'Kanit', sans-serif;
 }
 
 #install, #operation{
