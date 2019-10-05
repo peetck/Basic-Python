@@ -21,8 +21,8 @@
             <div class="navbar-nav">
                 <a href="#main" class="nav-item nav-link active kanit">Installation</a>
                 <a href="#data-type" class="nav-item nav-link active kanit">Data Type & Varieble</a>
-                <a href="#" class="nav-item nav-link active kanit">Input & Output</a>
-                <a href="#" class="nav-item nav-link active kanit">Operation</a>
+                <a href="#input-output" class="nav-item nav-link active kanit">Input & Output</a>
+                <a href="#operators" class="nav-item nav-link active kanit">Operators</a>
                 <a href="#" class="nav-item nav-link active kanit">Boolean & Condition</a>
                 <a href="#" class="nav-item nav-link active kanit">String</a>
                 <a href="#" class="nav-item nav-link active kanit">String format</a>
@@ -57,48 +57,51 @@
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="data-type">Data Type & Varieble (ชนิดของข้อมูล & ตัวแปร)</h1>
         <h5 class="p-5 mb-1">
                 <p>ก่อนที่เราจะไปรู้จักกับตัวแปรเราต้องรู้จักกับ ชนิดของข้อมูลใน ภาษา Python กันก่อนครับซึ่งจะมีตามนี้เลย</p>
-                <table class="table table-striped border">
-                    <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ตัวอักษรและข้อความ (String)</td>
-                            <td>"Hello world", 'hi', "2019"</td>
-                        </tr>
-                        <tr>
-                            <td>ตัวเลขจํานวนเต็ม (Integer)</td>
-                            <td>6, 8, -5, 101, 187</td>
-                        </tr>
-                        <tr>
-                            <td>ตัวเลขทศนิยม (Float)</td>
-                            <td>2.0, 87.1, -5.5</td>
-                        </tr>
-                        <tr>
-                            <td>ค่าความจริง (Boolean)</td>
-                            <td>True, False</td>
-                        </tr>
-                        <tr>
-                            <td>ลิสต์ (List)</td>
-                            <td>[5, 1, "hi", 5.5, True]</td>
-                        </tr>
-                        <tr>
-                            <td>ดิกชันนารี่ (Dictionary)</td>
-                            <td>{"John": 55, "Bob" : 879}</td>
-                        </tr>
-                        <tr>
-                            <td>ทูเพิล (Tuple)</td>
-                            <td>(5, 9, 10, 54, 5.1, True)</td>
-                        </tr>
-                        <tr>
-                            <td>เซ็ท (Set)</td>
-                            <td>{5, 9, 7, 8, True}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped border">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ตัวอักษรและข้อความ (String)</td>
+                                <td>"Hello world", 'hi', "2019"</td>
+                            </tr>
+                            <tr>
+                                <td>ตัวเลขจํานวนเต็ม (Integer)</td>
+                                <td>6, 8, -5, 101, 187</td>
+                            </tr>
+                            <tr>
+                                <td>ตัวเลขทศนิยม (Float)</td>
+                                <td>2.0, 87.1, -5.5</td>
+                            </tr>
+                            <tr>
+                                <td>ค่าความจริง (Boolean)</td>
+                                <td>True, False</td>
+                            </tr>
+                            <tr>
+                                <td>ลิสต์ (List)</td>
+                                <td>[5, 1, "hi", 5.5, True]</td>
+                            </tr>
+                            <tr>
+                                <td>ดิกชันนารี่ (Dictionary)</td>
+                                <td>{"John": 55, "Bob" : 879}</td>
+                            </tr>
+                            <tr>
+                                <td>ทูเพิล (Tuple)</td>
+                                <td>(5, 9, 10, 54, 5.1, True)</td>
+                            </tr>
+                            <tr>
+                                <td>เซ็ท (Set)</td>
+                                <td>{5, 9, 7, 8, True}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <p>ซึ่งเราสามารถกําหนดค่าตามชนิดข้อมูลข้างต้นนี้ให้กับตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
                 <img src="images/ex1.png" alt="" class="img-fluid mb-3">
                 <p>จากโค้ดข้างบนหมายความว่า
@@ -111,28 +114,31 @@
                 <p>และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
                 <img src="images/ex2.png" alt="" class="img-fluid mb-3"> <img src="images/ex3.png" alt="" class="img-fluid mb-3">
                 <p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ตามนี้เลยครับ</p>
-                <table class="table table-striped border">
-                    <thead>
-                        <tr>
-                            <th>ชนิดที่ต้องการจะแปลงให้เป็น</th>
-                            <th>Build in function</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ตัวเลขจํานวนเต็ม</td>
-                            <td>int()</td>
-                        </tr>
-                        <tr>
-                            <td>ตัวอักษรและข้อความ</td>
-                            <td>str()</td>
-                        </tr>
-                        <tr>
-                            <td>ตัวเลขทศนิยม</td>
-                            <td>float()</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped border">
+                        <thead>
+                            <tr>
+                                <th>ชนิดที่ต้องการจะแปลงให้เป็น</th>
+                                <th>Build in function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ตัวเลขจํานวนเต็ม</td>
+                                <td>int()</td>
+                            </tr>
+                            <tr>
+                                <td>ตัวอักษรและข้อความ</td>
+                                <td>str()</td>
+                            </tr>
+                            <tr>
+                                <td>ตัวเลขทศนิยม</td>
+                                <td>float()</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <p>ส่วนชนิดของข้อมูลแบบอื่นๆเราจะไปลงรายละเอียดกันในหัวข้อหลังๆนะครับ</p>
                 <img src="images/ex4.png" alt="" class="img-fluid mb-3"> <img src="images/ex5.png" alt="" class="img-fluid mb-3">
                 <p><b>เราไม่สามารถแปลงข้อความที่มีตัวอักษรให้เป็น int และ float ได้เพราะจํานวนเต็มและทศนิยมไม่ควรจะมีตัวอักษร ส่งผลให้เกิด ValueError</b></p>
@@ -149,8 +155,121 @@
             <img src="images/ex8.png" alt="" class="img-fluid mb-3"> <img src="images/ex9.png" alt="" class="img-fluid mb-3">
             <p>หากเราอยากได้ Input ที่เป็นชนิดตัวแปรอื่นที่ไม่ใช่ String เราก็สามารถใช้ Build in function มาช่วยได้ครับ ยกตัวอย่างเช่น</p>
             <img src="images/ex10.png" alt="" class="img-fluid mb-3"> <img src="images/ex11.png" alt="" class="img-fluid mb-3">
+            <p>ในส่วนของ print() เนี่ยมีลูกเล่นเยอะมากๆเลยครับ ผมจะพูดถึงการ print หลายๆตัวแปรหรือค่าหลายๆค่าพร้อมกันก่อนโดยเราสามารถทําได้โดยการใช้ "," ครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex12.png" alt="" class="img-fluid mb-3"> <img src="images/ex13.png" alt="" class="img-fluid mb-3">
+            <p>จริงๆแล้วยังมี String Format ด้วยครับแต่ในตอนนี้เราจะพูดถึงแค่นี้ก่อนส่วนในเรื่องของ String Format เราจะไปพูดทีหลังครับ</p>
         </h5>
 
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="operators">Operators (ตัวดำเนินการ)</h1>
+        <h5 class="p-5 mb-1">
+            <p>Operators หรือตัวดำเนินการ คือการกระทําการทางคณิตศาสตร์ต่างๆกับข้อมูล ซึ่งในภาษา Python จะมีหลักๆอยู่ด้วยกันตามนี้เลยครับ</p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>การดําเนินการ</th>
+                            <th>สัญลักษณ์</th>
+                            <th>หน้าที่</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td>+</td>
+                            <td>การบวก</td>
+                        </tr>
+                        <tr>
+                            <td>Subtraction</td>
+                            <td>-</td>
+                            <td>การลบ</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplication</td>
+                            <td>*</td>
+                            <td>การคูณ</td>
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>/</td>
+                            <td>การหาร</td>
+                        </tr>
+                        <tr>
+                            <td>Floor Division</td>
+                            <td>//</td>
+                            <td>หารแบบตัดเศษ</td>
+                        </tr>
+                        <tr>
+                            <td>Modulo</td>
+                            <td>%</td>
+                            <td>หารเพื่อเอาเศษ</td>
+                        </tr>
+                        <tr>
+                            <td>Exponentiation</td>
+                            <td>**</td>
+                            <td>การยกกําลัง</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>ซึ่งตัวดําเนินการพวกนี้มีไว้เพื่อให้เราสามารถ คํานวณทางคณิตศาสตร์ในโปรแกรมของเราได้ครับยกตัวอย่างเช่น</p>
+            <img src="images/ex14.png" alt="" class="img-fluid mb-3"> <img src="images/ex15.png" alt="" class="img-fluid mb-3">
+            <p>ซึ่งในภาษา Python จะใช้สิ่งที่เรียกกันว่า PEMDAS ครับคือ ลําดับการกําหนดว่าจะทําอะไรก่อนอะไรหลังซึ่งลําดับความสําคัญจะเป็นไปตามนี้เลย</p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>ลําดับความสําคัญ</th>
+                            <th>การดําเนินการ</th>
+                            <th>ทิศทาง</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>วงเล็บ</td>
+                            <td>ซ้ายไปขวา</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ยกกําลัง (**)</td>
+                            <td>ขวาไปซ้าย</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>คูณ, หาร, หารแบบตัดเศษ, หารเพื่อเอาเศษ (*, /, //, %)</td>
+                            <td>ซ้ายไปขวา</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>การบวก, การลบ (+, -)</td>
+                            <td>ซ้ายไปขวา</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>ยกตัวอย่างเช่น</p>
+            <img src="images/ex16.png" alt="" class="img-fluid mb-3"> <img src="images/ex17.png" alt="" class="img-fluid mb-3">
+            <p>ลําดับของสมการอันแรกจะเป็นตามนี้ครับ</p>
+            <ul>
+                <li>20 ** 2 + (2 * (80 / 5) ** 5) % 5 - 2 + 8</li>
+                <li>20 ** 2 + (2 * 16 ** 5) % 5 - 2 + 8</li>
+                <li>20 ** 2 + (2 * 1048576) % 5 - 2 + 8</li>
+                <li>20 ** 2 + 2097152 % 5 - 2 + 8</li>
+                <li>400 + 2097152 % 5 - 2 + 8</li>
+                <li>400 + 2 - 2 + 8</li>
+                <li>402 - 2 + 8</li>
+                <li>400 + 8</li>
+                <li>408</li>
+            </ul>
+            <p>ลําดับของสมการอันที่สองจะเป็นตามนี้ครับ</p>
+            <ul>
+                <li>20 + (5 + 2 * 5 ) / 5</li>
+                <li>20 + (5 + 10) / 5</li>
+                <li>20 + 15 / 5</li>
+                <li>20 + 3</li>
+                <li>23</li>
+            </ul>
+        </h5>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
