@@ -20,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a href="#main" class="nav-item nav-link active kanit">Installation</a>
-                <a href="#varieble" class="nav-item nav-link active kanit">Data Type & Varieble</a>
-                <a href="#" class="nav-item nav-link active kanit">I/O(Input/Output)</a>
+                <a href="#data-type" class="nav-item nav-link active kanit">Data Type & Varieble</a>
+                <a href="#" class="nav-item nav-link active kanit">Input & Output</a>
                 <a href="#" class="nav-item nav-link active kanit">Operation</a>
-                <a href="#" class="nav-item nav-link active kanit">Logical Operation</a>
+                <a href="#" class="nav-item nav-link active kanit">Boolean & Condition</a>
                 <a href="#" class="nav-item nav-link active kanit">String</a>
                 <a href="#" class="nav-item nav-link active kanit">String format</a>
                 <a href="#" class="nav-item nav-link active kanit">Function</a>
@@ -54,7 +54,7 @@
                 <center><img src="images/python_idle2.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd2.png" alt="" class="img-fluid mb-3" width="800"></center>
 
             </h5>
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="varieble">Data Type & Varieble (ชนิดของข้อมูล & ตัวแปร)</h1>
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="data-type">Data Type & Varieble (ชนิดของข้อมูล & ตัวแปร)</h1>
         <h5 class="p-5 mb-1">
                 <p>ก่อนที่เราจะไปรู้จักกับตัวแปรเราต้องรู้จักกับ ชนิดของข้อมูลใน ภาษา Python กันก่อนครับซึ่งจะมีตามนี้เลย</p>
                 <table class="table table-striped border">
@@ -66,35 +66,35 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>ตัวอักษรและข้อความ (str)</td>
+                            <td>ตัวอักษรและข้อความ (String)</td>
                             <td>"Hello world", 'hi', "2019"</td>
                         </tr>
                         <tr>
-                            <td>ตัวเลขจํานวนเต็ม (int)</td>
+                            <td>ตัวเลขจํานวนเต็ม (Integer)</td>
                             <td>6, 8, -5, 101, 187</td>
                         </tr>
                         <tr>
-                            <td>ตัวเลขทศนิยม (float)</td>
+                            <td>ตัวเลขทศนิยม (Float)</td>
                             <td>2.0, 87.1, -5.5</td>
                         </tr>
                         <tr>
-                            <td>ค่าความจริง (bool)</td>
+                            <td>ค่าความจริง (Boolean)</td>
                             <td>True, False</td>
                         </tr>
                         <tr>
-                            <td>ลิสต์ (list)</td>
+                            <td>ลิสต์ (List)</td>
                             <td>[5, 1, "hi", 5.5, True]</td>
                         </tr>
                         <tr>
-                            <td>ดิกชันนารี่ (dict)</td>
+                            <td>ดิกชันนารี่ (Dictionary)</td>
                             <td>{"John": 55, "Bob" : 879}</td>
                         </tr>
                         <tr>
-                            <td>ทูเพิล (tuple)</td>
+                            <td>ทูเพิล (Tuple)</td>
                             <td>(5, 9, 10, 54, 5.1, True)</td>
                         </tr>
                         <tr>
-                            <td>เซ็ท (set)</td>
+                            <td>เซ็ท (Set)</td>
                             <td>{5, 9, 7, 8, True}</td>
                         </tr>
                     </tbody>
@@ -110,25 +110,47 @@
                 </p>
                 <p>และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
                 <img src="images/ex2.png" alt="" class="img-fluid mb-3"> <img src="images/ex3.png" alt="" class="img-fluid mb-3">
-                <p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้คําสั่ง "ชนิดของตัวแปรนั้น()" ยกตัวอย่างเช่น</p>
+                <p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ตามนี้เลยครับ</p>
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>ชนิดที่ต้องการจะแปลงให้เป็น</th>
+                            <th>Build in function</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ตัวเลขจํานวนเต็ม</td>
+                            <td>int()</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวอักษรและข้อความ</td>
+                            <td>str()</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวเลขทศนิยม</td>
+                            <td>float()</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>ส่วนชนิดของข้อมูลแบบอื่นๆเราจะไปลงรายละเอียดกันในหัวข้อหลังๆนะครับ</p>
                 <img src="images/ex4.png" alt="" class="img-fluid mb-3"> <img src="images/ex5.png" alt="" class="img-fluid mb-3">
+                <p><b>เราไม่สามารถแปลงข้อความที่มีตัวอักษรให้เป็น int และ float ได้เพราะจํานวนเต็มและทศนิยมไม่ควรจะมีตัวอักษร ส่งผลให้เกิด ValueError</b></p>
+                <img src="images/ex6.png" alt="" class="img-fluid mb-3"> <img src="images/ex7.png" alt="" class="img-fluid mb-3">
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="input-output">Input & Output</h1>
         <h5 class="p-5 mb-1">
-            <p>Input คือการรับข้อมูลเข้ามา และ Output คือการแสดงผลลัพธ์ที่ได้ครับ ยกตัวอย่างเช่น</p>
-            <p>หากเราต้องการทําโปรแกรมที่รับชื่อของผู้ใช้งานเข้ามาและ ส่งกลับไปเป็นข้อความว่า "Hello <ชื่อ>"</p>
-            <p>Input ก็คือ ชื่อ</p>
-            <p>Output ก็คือ "Hello <ชื่อ>"</p>
+            <p>Input คือการรับข้อมูลเข้ามา และ Output คือการแสดงผลลัพธ์ที่ได้ครับ</p>
+            <ul>
+                <li>ใน Python การรับ Input จะสามารถทําได้โดยใช้ Build in function ที่ชื่อว่า input() ครับ ซึ่งมันจะรับค่ามาเป็น String ครับ</li>
+                <li>ใน Python การแสดงผลลัพธ์ออกมาทางหน้าจอ สามารถทําได้โดยการใช้ Build in function ที่ชื่อว่า print() ครับ</li>
+            </ul>
+            <p> ยกตัวอย่างเช่น</p>
+            <img src="images/ex8.png" alt="" class="img-fluid mb-3"> <img src="images/ex9.png" alt="" class="img-fluid mb-3">
+            <p>หากเราอยากได้ Input ที่เป็นชนิดตัวแปรอื่นที่ไม่ใช่ String เราก็สามารถใช้ Build in function มาช่วยได้ครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex10.png" alt="" class="img-fluid mb-3"> <img src="images/ex11.png" alt="" class="img-fluid mb-3">
         </h5>
 
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="operation">Operation</h1>
-        <h5 class="p-5 mb-1"></h5>
-
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="logical-operation">Logical Operation</h1>
-        <h5 class="p-5 mb-1"></h5>
-
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="string">String</h1>
-        <h5 class="p-5 mb-1"></h5>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
