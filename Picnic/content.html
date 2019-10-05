@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,18 @@
     <title>Basic Python</title>
     <link rel="shortcut icon" href="images/py_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body id="main">
     <br>
     <br>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a href="index.html" class="navbar-brand kanit"> <img src="images/py_logo.png" width="30" alt=""> Basic Python</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="index.html" class="navbar-brand kanit"> <img src="images/py_logo.png" width="30" alt=""> Basic
+            Python</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -35,135 +40,162 @@
     <div class="container-fluid kanit p-0">
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="install">Installation (การติดตั้ง)</h1>
         <h5 class="p-5 mb-1">
-                <p>ในการติดตั้งภาษา Python นั้น วิธีการคือให้เราเข้าไปที่เว็บไซต์ <a href="https://www.python.org/">python.org</a> จากนั้นไปที่หน้า download และเลือกเวอร์ชั่นและระบบปฏิบัติการที่ต้องการ (เนื้อหาในเว็บไซต์นี้จะเป็น Python 3.7.4)</p>
-                <center><img src="images/install.png" alt="can't load install.png" class="img-fluid mb-3" width="800"></center>
-                <p>ในตอนติดตั้งนั้นให้เราเลือกช่องที่เขียนไว้ว่า "Add Python 3.7 to PATH" เพื่อที่จะทําให้เราสามารถเรียกใช้ Python ผ่านทาง CMD ของเราได้นั้นเอง</p>
-                <center><img src="images/install_path.png" alt="can't load install_path.png" class="img-fluid mb-3" width="800"></center>
-                <p>จากนั้นเราสามารถทดสอบได้ว่าเราติดตั้งเรียบร้อยแล้วด้วยการเปิด CMD แล้วพิมพ์คําว่า "py"</p>
-                <center><img src="images/install_py.png" alt="can't load install_py" class="img-fluid mb-3" width="800"></center>
-                <hr>
-                <p>ในการรันภาษา Python นั้นเราสามารถรัน Python ได้หลักๆ2วิธีตามนี้เลยครับ <ul>
-                    <li>Interactive Mode คือการที่เราพิมพ์ Code ที่ต้องการจะรันในแต่ละบรรทัดและผลลัพธ์ก็จะออกมาตามแต่ละบรรทัด</li>
+            <p>ในการติดตั้งภาษา Python นั้น วิธีการคือให้เราเข้าไปที่เว็บไซต์ <a
+                    href="https://www.python.org/">python.org</a> จากนั้นไปที่หน้า download
+                และเลือกเวอร์ชั่นและระบบปฏิบัติการที่ต้องการ (เนื้อหาในเว็บไซต์นี้จะเป็น Python 3.7.4)</p>
+            <center><img src="images/install.png" alt="can't load install.png" class="img-fluid mb-3" width="800">
+            </center>
+            <p>ในตอนติดตั้งนั้นให้เราเลือกช่องที่เขียนไว้ว่า "Add Python 3.7 to PATH" เพื่อที่จะทําให้เราสามารถเรียกใช้
+                Python ผ่านทาง CMD ของเราได้นั้นเอง</p>
+            <center><img src="images/install_path.png" alt="can't load install_path.png" class="img-fluid mb-3"
+                    width="800"></center>
+            <p>จากนั้นเราสามารถทดสอบได้ว่าเราติดตั้งเรียบร้อยแล้วด้วยการเปิด CMD แล้วพิมพ์คําว่า "py"</p>
+            <center><img src="images/install_py.png" alt="can't load install_py" class="img-fluid mb-3" width="800">
+            </center>
+            <hr>
+            <p>ในการรันภาษา Python นั้นเราสามารถรัน Python ได้หลักๆ2วิธีตามนี้เลยครับ <ul>
+                    <li>Interactive Mode คือการที่เราพิมพ์ Code
+                        ที่ต้องการจะรันในแต่ละบรรทัดและผลลัพธ์ก็จะออกมาตามแต่ละบรรทัด</li>
                     <li>Script Mode คือการที่เรามีไฟล์ .py ที่เป็นโค้ดแล้วนํามารัน</li>
-                </ul></p>
-                <p>การใช้งาน Interactive Mode ง่ายๆเลยครับเราก็เปิด cmd หรือจะเข้าตัว IDLE ที่มีมาให้หลังจากติดตั้ง Python แล้วก็ได้ครับ</p>
-                <center><img src="images/python_idle.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd.png" alt="" class="img-fluid mb-3" width="800"></center>
+                </ul>
+            </p>
+            <p>การใช้งาน Interactive Mode ง่ายๆเลยครับเราก็เปิด cmd หรือจะเข้าตัว IDLE ที่มีมาให้หลังจากติดตั้ง Python
+                แล้วก็ได้ครับ</p>
+            <center><img src="images/python_idle.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd.png"
+                    alt="" class="img-fluid mb-3" width="800"></center>
 
-                <hr>
-                <p>การใช้งาน Script Mode เราสามารถทําได้โดยการเปิด cmd และพิมพ์ "py -3 <ชื่อไฟล์>.py" จากนั้น Python ก็จะนําโค้ดที่อยู่ข้างในไฟล์นั้นมารัน
-                หากเราใช้ IDLE ของ Python ก็สามารถรันได้โดยการกด F5 ครับ</p>
-                <center><img src="images/python_idle2.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd2.png" alt="" class="img-fluid mb-3" width="800"></center>
+            <hr>
+            <p>การใช้งาน Script Mode เราสามารถทําได้โดยการเปิด cmd และพิมพ์ "py -3 <ชื่อไฟล์>.py" จากนั้น Python
+                    ก็จะนําโค้ดที่อยู่ข้างในไฟล์นั้นมารัน
+                    หากเราใช้ IDLE ของ Python ก็สามารถรันได้โดยการกด F5 ครับ</p>
+            <center><img src="images/python_idle2.png" alt="" class="img-fluid mb-3"> <img src="images/python_cmd2.png"
+                    alt="" class="img-fluid mb-3" width="800"></center>
 
-            </h5>
-        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="data-type">Data Type & Varieble (ชนิดของข้อมูล & ตัวแปร)</h1>
+        </h5>
+        <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="data-type">Data Type & Varieble (ชนิดของข้อมูล & ตัวแปร)
+        </h1>
         <h5 class="p-5 mb-1">
-                <p>ก่อนที่เราจะไปรู้จักกับตัวแปรเราต้องรู้จักกับ ชนิดของข้อมูลใน ภาษา Python กันก่อนครับซึ่งจะมีตามนี้เลย</p>
-                <div class="table-responsive">
-                    <table class="table table-striped border">
-                        <thead>
-                            <tr>
-                                <th>Type</th>
-                                <th>Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ตัวอักษรและข้อความ (String)</td>
-                                <td>"Hello world", 'hi', "2019"</td>
-                            </tr>
-                            <tr>
-                                <td>ตัวเลขจํานวนเต็ม (Integer)</td>
-                                <td>6, 8, -5, 101, 187</td>
-                            </tr>
-                            <tr>
-                                <td>ตัวเลขทศนิยม (Float)</td>
-                                <td>2.0, 87.1, -5.5</td>
-                            </tr>
-                            <tr>
-                                <td>ค่าความจริง (Boolean)</td>
-                                <td>True, False</td>
-                            </tr>
-                            <tr>
-                                <td>ลิสต์ (List)</td>
-                                <td>[5, 1, "hi", 5.5, True]</td>
-                            </tr>
-                            <tr>
-                                <td>ดิกชันนารี่ (Dictionary)</td>
-                                <td>{"John": 55, "Bob" : 879}</td>
-                            </tr>
-                            <tr>
-                                <td>ทูเพิล (Tuple)</td>
-                                <td>(5, 9, 10, 54, 5.1, True)</td>
-                            </tr>
-                            <tr>
-                                <td>เซ็ท (Set)</td>
-                                <td>{5, 9, 7, 8, True}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <p>ก่อนที่เราจะไปรู้จักกับตัวแปรเราต้องรู้จักกับ ชนิดของข้อมูลใน ภาษา Python กันก่อนครับซึ่งจะมีตามนี้เลย
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ตัวอักษรและข้อความ (String)</td>
+                            <td>"Hello world", 'hi', "2019"</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวเลขจํานวนเต็ม (Integer)</td>
+                            <td>6, 8, -5, 101, 187</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวเลขทศนิยม (Float)</td>
+                            <td>2.0, 87.1, -5.5</td>
+                        </tr>
+                        <tr>
+                            <td>ค่าความจริง (Boolean)</td>
+                            <td>True, False</td>
+                        </tr>
+                        <tr>
+                            <td>ลิสต์ (List)</td>
+                            <td>[5, 1, "hi", 5.5, True]</td>
+                        </tr>
+                        <tr>
+                            <td>ดิกชันนารี่ (Dictionary)</td>
+                            <td>{"John": 55, "Bob" : 879}</td>
+                        </tr>
+                        <tr>
+                            <td>ทูเพิล (Tuple)</td>
+                            <td>(5, 9, 10, 54, 5.1, True)</td>
+                        </tr>
+                        <tr>
+                            <td>เซ็ท (Set)</td>
+                            <td>{5, 9, 7, 8, True}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <p>ซึ่งเราสามารถกําหนดค่าตามชนิดข้อมูลข้างต้นนี้ให้กับตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
-                <img src="images/ex1.png" alt="" class="img-fluid mb-3">
-                <p>จากโค้ดข้างบนหมายความว่า
-                    <ul>
-                        <li>ตัวแปร name มีค่าเป็นข้อความ(String) ว่า John</li>
-                        <li>ตัวแปร age มีค่าเป็นจํานวนเต็ม(Int) คือ 5</li>
-                        <li>ตัวแปร love_tree มีค่าเป็นค่าความจริง(Boolean) คือ True</li>
-                    </ul>
-                </p>
-                <p>และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
-                <img src="images/ex2.png" alt="" class="img-fluid mb-3"> <img src="images/ex3.png" alt="" class="img-fluid mb-3">
-                <p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ตามนี้เลยครับ</p>
-                <div class="table-responsive">
-                    <table class="table table-striped border">
-                        <thead>
-                            <tr>
-                                <th>ชนิดที่ต้องการจะแปลงให้เป็น</th>
-                                <th>Build in function</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ตัวเลขจํานวนเต็ม</td>
-                                <td>int()</td>
-                            </tr>
-                            <tr>
-                                <td>ตัวอักษรและข้อความ</td>
-                                <td>str()</td>
-                            </tr>
-                            <tr>
-                                <td>ตัวเลขทศนิยม</td>
-                                <td>float()</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <p>ซึ่งเราสามารถกําหนดค่าตามชนิดข้อมูลข้างต้นนี้ให้กับตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex1.png" alt="" class="img-fluid mb-3">
+            <p>จากโค้ดข้างบนหมายความว่า
+                <ul>
+                    <li>ตัวแปร name มีค่าเป็นข้อความ(String) ว่า John</li>
+                    <li>ตัวแปร age มีค่าเป็นจํานวนเต็ม(Int) คือ 5</li>
+                    <li>ตัวแปร love_tree มีค่าเป็นค่าความจริง(Boolean) คือ True</li>
+                </ul>
+            </p>
+            <p>และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex2.png" alt="" class="img-fluid mb-3"> <img src="images/ex3.png" alt=""
+                class="img-fluid mb-3">
+            <p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ตามนี้เลยครับ</p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>ชนิดที่ต้องการจะแปลงให้เป็น</th>
+                            <th>Build in function</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ตัวเลขจํานวนเต็ม</td>
+                            <td>int()</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวอักษรและข้อความ</td>
+                            <td>str()</td>
+                        </tr>
+                        <tr>
+                            <td>ตัวเลขทศนิยม</td>
+                            <td>float()</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <p>ส่วนชนิดของข้อมูลแบบอื่นๆเราจะไปลงรายละเอียดกันในหัวข้อหลังๆนะครับ</p>
-                <img src="images/ex4.png" alt="" class="img-fluid mb-3"> <img src="images/ex5.png" alt="" class="img-fluid mb-3">
-                <p><b>เราไม่สามารถแปลงข้อความที่มีตัวอักษรให้เป็น int และ float ได้เพราะจํานวนเต็มและทศนิยมไม่ควรจะมีตัวอักษร ส่งผลให้เกิด ValueError</b></p>
-                <img src="images/ex6.png" alt="" class="img-fluid mb-3"> <img src="images/ex7.png" alt="" class="img-fluid mb-3">
+            <p>ส่วนชนิดของข้อมูลแบบอื่นๆเราจะไปลงรายละเอียดกันในหัวข้อหลังๆนะครับ</p>
+            <img src="images/ex4.png" alt="" class="img-fluid mb-3"> <img src="images/ex5.png" alt=""
+                class="img-fluid mb-3">
+            <p><b>เราไม่สามารถแปลงข้อความที่มีตัวอักษรให้เป็น int และ float
+                    ได้เพราะจํานวนเต็มและทศนิยมไม่ควรจะมีตัวอักษร ส่งผลให้เกิด ValueError</b></p>
+            <img src="images/ex6.png" alt="" class="img-fluid mb-3"> <img src="images/ex7.png" alt=""
+                class="img-fluid mb-3">
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="input-output">Input & Output</h1>
         <h5 class="p-5 mb-1">
             <p>Input คือการรับข้อมูลเข้ามา และ Output คือการแสดงผลลัพธ์ที่ได้ครับ</p>
             <ul>
-                <li>ใน Python การรับ Input จะสามารถทําได้โดยใช้ Build in function ที่ชื่อว่า input() ครับ ซึ่งมันจะรับค่ามาเป็น String ครับ</li>
-                <li>ใน Python การแสดงผลลัพธ์ออกมาทางหน้าจอ สามารถทําได้โดยการใช้ Build in function ที่ชื่อว่า print() ครับ</li>
+                <li>ใน Python การรับ Input จะสามารถทําได้โดยใช้ Build in function ที่ชื่อว่า input() ครับ
+                    ซึ่งมันจะรับค่ามาเป็น String ครับ</li>
+                <li>ใน Python การแสดงผลลัพธ์ออกมาทางหน้าจอ สามารถทําได้โดยการใช้ Build in function ที่ชื่อว่า print()
+                    ครับ</li>
             </ul>
             <p> ยกตัวอย่างเช่น</p>
-            <img src="images/ex8.png" alt="" class="img-fluid mb-3"> <img src="images/ex9.png" alt="" class="img-fluid mb-3">
-            <p>หากเราอยากได้ Input ที่เป็นชนิดตัวแปรอื่นที่ไม่ใช่ String เราก็สามารถใช้ Build in function มาช่วยได้ครับ ยกตัวอย่างเช่น</p>
-            <img src="images/ex10.png" alt="" class="img-fluid mb-3"> <img src="images/ex11.png" alt="" class="img-fluid mb-3">
-            <p>ในส่วนของ print() เนี่ยมีลูกเล่นเยอะมากๆเลยครับ ผมจะพูดถึงการ print หลายๆตัวแปรหรือค่าหลายๆค่าพร้อมกันก่อนโดยเราสามารถทําได้โดยการใช้ "," ครับ ยกตัวอย่างเช่น</p>
-            <img src="images/ex12.png" alt="" class="img-fluid mb-3"> <img src="images/ex13.png" alt="" class="img-fluid mb-3">
-            <p>จริงๆแล้วยังมี String Format ด้วยครับแต่ในตอนนี้เราจะพูดถึงแค่นี้ก่อนส่วนในเรื่องของ String Format เราจะไปพูดในหัวข้อข้อ String Format ครับ</p>
+            <img src="images/ex8.png" alt="" class="img-fluid mb-3"> <img src="images/ex9.png" alt=""
+                class="img-fluid mb-3">
+            <p>หากเราอยากได้ Input ที่เป็นชนิดตัวแปรอื่นที่ไม่ใช่ String เราก็สามารถใช้ Build in function มาช่วยได้ครับ
+                ยกตัวอย่างเช่น</p>
+            <img src="images/ex10.png" alt="" class="img-fluid mb-3"> <img src="images/ex11.png" alt=""
+                class="img-fluid mb-3">
+            <p>ในส่วนของ print() เนี่ยมีลูกเล่นเยอะมากๆเลยครับ ผมจะพูดถึงการ print
+                หลายๆตัวแปรหรือค่าหลายๆค่าพร้อมกันก่อนโดยเราสามารถทําได้โดยการใช้ "," ครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex12.png" alt="" class="img-fluid mb-3"> <img src="images/ex13.png" alt=""
+                class="img-fluid mb-3">
+            <p>จริงๆแล้วยังมี String Format ด้วยครับแต่ในตอนนี้เราจะพูดถึงแค่นี้ก่อนส่วนในเรื่องของ String Format
+                เราจะไปพูดในหัวข้อข้อ String Format ครับ</p>
         </h5>
 
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="operators">Operators (ตัวดำเนินการ)</h1>
         <h5 class="p-5 mb-1">
-            <p>Operators หรือตัวดำเนินการ คือการกระทําการทางคณิตศาสตร์ต่างๆกับข้อมูล ซึ่งในภาษา Python จะมีหลักๆอยู่ด้วยกันตามนี้เลยครับ</p>
+            <p>Operators หรือตัวดำเนินการ คือการกระทําการทางคณิตศาสตร์ต่างๆกับข้อมูล ซึ่งในภาษา Python
+                จะมีหลักๆอยู่ด้วยกันตามนี้เลยครับ</p>
             <div class="table-responsive">
                 <table class="table table-striped border">
                     <thead>
@@ -213,9 +245,11 @@
                 </table>
             </div>
             <p>ซึ่งตัวดําเนินการพวกนี้มีไว้เพื่อให้เราสามารถ คํานวณทางคณิตศาสตร์ในโปรแกรมของเราได้ครับยกตัวอย่างเช่น</p>
-            <img src="images/ex14.png" alt="" class="img-fluid mb-3"> <img src="images/ex15.png" alt="" class="img-fluid mb-3">
+            <img src="images/ex14.png" alt="" class="img-fluid mb-3"> <img src="images/ex15.png" alt=""
+                class="img-fluid mb-3">
             <p>สําหรับ String เราจะขอเก็บไว้พูดในตอนที่เป็นหัวข้อของ String นะครับ</p>
-            <p>ซึ่งในภาษา Python จะใช้สิ่งที่เรียกกันว่า PEMDAS ครับคือ ลําดับการกําหนดว่าจะทําอะไรก่อนอะไรหลังซึ่งลําดับความสําคัญจะเป็นไปตามนี้เลย</p>
+            <p>ซึ่งในภาษา Python จะใช้สิ่งที่เรียกกันว่า PEMDAS ครับคือ
+                ลําดับการกําหนดว่าจะทําอะไรก่อนอะไรหลังซึ่งลําดับความสําคัญจะเป็นไปตามนี้เลย</p>
             <div class="table-responsive">
                 <table class="table table-striped border">
                     <thead>
@@ -250,7 +284,8 @@
                 </table>
             </div>
             <p>ยกตัวอย่างเช่น</p>
-            <img src="images/ex16.png" alt="" class="img-fluid mb-3"> <img src="images/ex17.png" alt="" class="img-fluid mb-3">
+            <img src="images/ex16.png" alt="" class="img-fluid mb-3"> <img src="images/ex17.png" alt=""
+                class="img-fluid mb-3">
             <p>ลําดับของสมการอันแรกจะเป็นตามนี้ครับ</p>
             <ul>
                 <li>20 ** 2 + (2 * (80 / 5) ** 5) % 5 - 2 + 8</li>
@@ -279,8 +314,53 @@
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="loop">Loop</h1>
         <h5 class="p-5 mb-1">
-
-
+            <p><b>loop คืออะไร?</b></p>
+            <p>คือ การทำงานซ้ำๆ โดยเราสามารถกำหนดเงื่อนไข หรือจำนวนรอบที่แน่นอนได้ เช่น
+                ให้ทำงานไปเรื่อยๆจนกว่าจะครบ 10 รอบ หรือ ทำงานไปเรื่อยๆจนกว่าเงื่อนไขจะเท็จครับ ใน Python จะแบ่งเป็น</p>
+            <ul>
+                <li>while loop</li>
+                <li>for loop</li>
+            </ul>
+            <p><b>while loop</b></p>
+            <ul>
+                <li>หลักการทำงานของ while คือ จะทำงานไปเรื่อยๆจนกว่าเงื่อนไขจะเป็นเท็จ</li>
+                <li>นิยมใช้ตอนที่เราไม่รู้รอบที่ชัดเจน</li>
+            </ul>
+            <p><b>while loop (Example)</b></p>
+            <p>______รูป_______</p>
+            <p><b>While loop (Example)</b></p>
+            <p>______รูป_______</p>
+            <p><b>While loop (Example)</b></p>
+            <p>______รูป_______</p>
+            <p><b>for loop</b></p>
+            <ul>
+                <li>หลักการทำงานของ for คือ จะทำงานไปเรื่อยจนกว่าจะครบรอบตามที่เรากำหนดใน <b>range()</b> หรือ ใช้กับ str, list, etc. โดยจะมี (variable) เป็นตัวแปรในแต่ละรอบ</li>
+                <li>นิยมใช้ตอนที่เรารู้รอบจัดเจน</li>
+            </ul>
+            <p><b>Built-in function range()</b></p>
+            <ul>
+                <li> built-in function range() จะทําการ return เป็นลําดับของตัวเลข โดยrange จะมี range(start, stop, step)<br><b>start</b> คือ ตัวเลขเริ่มต้น<br><b>stop</b> คือ   ให้หยุดที่ตัวเลขใด<br><b>step</b> คือ   จะให้เพิ่มที่ละเท่าใด </li>
+                <li>โดยหากเราเขียน range(stop) หมายความว่าเริ่มจาก0จบที่ stop แล้วเพิ่มทีละ 1 เช่น <b>range(3) เราจะได้ 0, 1, 2</b><br><b>range(5) เราจะได้ 0, 1, 2, 3, 4</b></li>
+                <li>โดยหากเราเขียน range(start, stop, step) หมายความว่าเริ่มจาก start จบที่ stop แล้วเพิ่มทีละ step เช่น <br>range(1, 10, 2) เราจะได้ 1, 3, 5, 7, 9<br>range(10, -1, 1) เราจะได้ 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0<br>range(-5, 10, 1) เราจะได้ -5, -4, -3, ... , 9</li>
+            </ul>
+            <p><b>For loop with range()</b></p>
+            <p>______รูป_______</p>
+            <p><b>For loop with range()</b></p>
+            <p>______รูป_______</p>
+            <p><b>For loop with range()</b></p>
+            <p>______รูป_______</p>
+            <p><b>For loop with range()</b></p>
+            <p>เราสามารถใช้ for loop กับ String ได้ (ในแต่ละรอบจะเป็นการนำ String แต่ละตัวอักษรมาครับ)</p>
+            <p>______รูป_______</p>
+            <p><b>ข้อควรระวัง</b></p>
+            <p>หากเราประกาศตัวแปรชั่วคราวแล้วเราไม่ไดใ้ช้เราจะโดนหัก quality ใน pylint ได้ครับ เพราะ <b>pylint</b> เป็นมาตรฐานของการเขียนโค้ด Python ครับ เพราะฉะนั้นวิธีแก้ก็คือเราประกาศเป็น <b>“_”</b></p>
+            <p>______รูป_______</p>
+            <p><b>คำสั่ง break</b></p>
+            <p>จะเป็นการหยุดการทํางานของลูปนั้นโดยทันที</p>
+            <p>______รูป_______</p>
+            <p><b>คำสั่ง continue</b></p>
+            <p>จะเป็นการบอกให้ไปทํารอบถัดไปทันทีโดยไม่สนใจโค้ดที่เหลือ</p>
+            <p>______รูป_______</p>
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="function">Function</h1>
         <h5 class="p-5 mb-1">
@@ -374,9 +454,16 @@
             <p>______รูป_______</p>
         </h5>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
