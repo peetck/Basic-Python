@@ -309,7 +309,228 @@
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="boolean-condition">Boolean & Condition</h1>
         <h5 class="p-5 mb-1">
+            <p>ค่าความจริงในภาษา Python มีแค่ True และ False เท่านั้นเองครับ ซึ่งจริงๆแล้วข้อมูลประเภทอื่นก็เป็นค่าความจริงเหมือนกันโดย</p>
+            <ul>
+                <li>ค่าความจริงที่ไม่ใช่ 0 หรือ String เปล่า จะมีค่าเป็น True</li>
+                <li>ค่าความจริงที่เป็น 0 หรือ String เปล่า จะมีค่าเป็น False</li>
+            </ul>
+            <p>เราสามารถเช็คได้จาก การใช้ Build in function ที่ชื่อว่า bool() ครับ ยกตัวอย่างเช่น</p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>เรียกใช้</th>
+                            <th>ผลลัพธ์</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bool(1)</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool(0.01)</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool(-1)</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool(-55)</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool("Hello")</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool(" ")</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>bool(0)</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>bool("")</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>bool(0.00)</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>bool(-0)</td>
+                            <td>False</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>ต่อไปเรามาดูสิ่งที่เรียกว่า Relational Operators กันครับ ซึ่งจะมีไว้สําหรับเปรียบเทียบค่าของ 2 สิ่งครับ ซึ่งจะมีทั้งหมด 6 อันดังนี้เลย</p>
+            <div class="table-responsive">
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>Relational Operators</th>
+                            <th>หน้าที่</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>เครื่องหมาย = (เท่ากับ)</td>
+                            <td>ทําการเปรียบเทียบว่าเท่ากันหรือไม่</td>
+                        </tr>
+                        <tr>
+                            <td>เครื่องหมาย != (ไม่เท่ากับ)</td>
+                            <td>ทําการเปรียบเทียบว่าไม่เท่ากันหรือไม่</td>
+                        </tr>
+                        <tr>
+                            <td>เครื่องหมาย > (มากกว่า)</td>
+                            <td>ทําการเปรียบเทียบว่าด้านซ้ายมากกว่าด้านขวาหรือไม่</td>
+                        </tr>
+                        <tr>
+                            <td>เครื่องหมาย < (น้อยกว่า)</td>
+                            <td>ทําการเปรียบเทียบว่าด้านซ้ายน้อยกว่าด้านขวาหรือไม่</td>
+                        </tr>
+                        <tr>
+                            <td>เครื่องหมาย >= (มากกว่าหรือเท่ากับ)</td>
+                            <td>ทําการเปรียบเทียบว่าด้านซ้ายมากกว่าหรือเท่ากับด้านขวาหรือไม่</td>
+                        </tr>
+                        <tr>
+                            <td>เครื่องหมาย <= (น้อยกว่าหรือเท่ากับ)</td>
+                            <td>ทําการเปรียบเทียบว่าด้านซ้ายน้อยกว่าหรือเท่ากับด้านขวาหรือไม่</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>มองดูแล้วอาจจะยังงงอยู่ลองมาดูตัวอย่างกันเลยครับ</p>
+            <img src="images/ex18.png" alt="" class="img-fluid mb-3"> <img src="images/ex19.png" alt="" class="img-fluid mb-3">
+            <p>ต่อไปเรามาดูสิ่งที่เรียกว่า Logical Operator กันครับ</p>
+            <ul>
+                <li>
+                    <p>and จะให้ค่าเป็น True ก็ต่อเมื่อเป็นด้านซ้ายและขวาเป็น True กับ True เท่านั้น</p>
+                    <div class="table-responsive">
+                            <table class="table table-striped border">
+                                <thead>
+                                    <tr>
+                                        <th>ด้านซ้าย</th>
+                                        <th>ด้านขวา</th>
+                                        <th>ผลลัพธ์</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                    </tr>
+                                    <tr>
+                                        <td>False</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                    </tr>
+                                    <tr>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                    </tr>
+                                    <tr>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </li>
+                <li>
+                        <p>or จะให้ค่าเป็น True ก็ต่อเมื่อเป็นด้านซ้ายหรือด้านขวาเป็น True</p>
+                        <div class="table-responsive">
+                                <table class="table table-striped border">
+                                    <thead>
+                                        <tr>
+                                            <th>ด้านซ้าย</th>
+                                            <th>ด้านขวา</th>
+                                            <th>ผลลัพธ์</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>False</td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr>
+                                            <td>False</td>
+                                            <td>True</td>
+                                            <td>True</td>
+                                        </tr>
+                                        <tr>
+                                            <td>True</td>
+                                            <td>False</td>
+                                            <td>True</td>
+                                        </tr>
+                                        <tr>
+                                            <td>True</td>
+                                            <td>True</td>
+                                            <td>True</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </li>
+                    <li>
+                        <p>not จะให้ค่าตรงข้าม</p>
+                            <div class="table-responsive">
+                                    <table class="table table-striped border">
+                                        <thead>
+                                            <tr>
+                                                <th>ค่าความจริง</th>
+                                                <th>ผลลัพธ์</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>False</td>
+                                                <td>True</td>
+                                            </tr>
+                                            <tr>
+                                                <td>True</td>
+                                                <td>False</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </li>
+                    <li>
+                        <p>in & not in สามารถใช้ได้กับ String, List, Tuple, set, etc.</p>
+                        <ul>
+                            <li>a in b >> จะเป็นการเช็คว่ามี a ใน b ไหม ถ้ามีก็ให้ค่าความจริงเป็น True ถ้าไม่ใช่เป็น False</li>
+                            <li>a not in b >> จะเป็นการเช็คว่า a ไม่ได้อยู่ใน b ใช่ไหม ถ้าใช่ก็ให้ค่าความจริงเป็น True ถ้าไม่ใช่เป็น False</li>
+                        </ul>
+                    </li>
+            </ul>
+            <p>เรามาดูตัวอย่างจากการใช้ Relational Operators ร่วมกับ Logical Operators กันครับ</p>
+            <img src="images/ex20.png" alt="" class="img-fluid mb-3"> <img src="images/ex21.png" alt="" class="img-fluid mb-3">
+            <hr>
+            <p>หลังจากที่เราเรียนรู้ในเรื่องของ Boolean ไปแล้วเราสามารถนําเจ้าพวก Boolean เนี่ยมากําหนดเงื่อนไขให้กับโปรแกรมของเราได้ครับ เช่น ถ้าตัวแปร a มีค่า > 10 ให้แสดงคําว่า "More than 10" ถ้าไม่ใช่
+                    ให้แสดงคําว่า "Less Than 10"</p>
+            <p>โดยเราสามารถทําได้โดยใช้สิ่งที่เรียกว่า Condition ครับ (If & else นั้นแหละ) ซึ่งจะมี Syntax ตามนี้เลยครับ</p>
+            <img src="images/ex22.png" alt="" class="img-fluid mb-3">
+            <p>โดย if จะทํางานโค้ดที่อยู่ภายในก็ต่อเมื่อเงื่อนไข (boolean expression) เป็นจริงครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex23.png" alt="" class="img-fluid mb-3"> <img src="images/ex24.png" alt="" class="img-fluid mb-3">
+            <p>เรามาดูสิ่งที่มาคู่กันกับ if กันครับ นั้นก็คือ else นั้นเอง ถามว่ามันคืออะไร else จะเป็นตัวบอกโค้ดที่จะถูกรันถ้าเงื่อนไข if ไม่เป็นจริงนั้นเองครับ ยกตัวอย่างเช่น</p>
+            <img src="images/ex25.png" alt="" class="img-fluid mb-3"> <img src="images/ex26.png" alt="" class="img-fluid mb-3">
 
+            <p>มี if else แล้วก็ต้องมี elif (else if) ครับ elif จะเป็นตัวบอกโค้ดที่จะถูกรันถ้าเงื่อนไขข้างบนไม่เป็นจริงแต่เงื่อนไขของมันเป็นจริงครับ เรามาลองดูโค้ดตัวอย่างนี้กันครับ</p>
+            <img src="images/ex27.png" alt="" class="img-fluid mb-3"> <img src="images/ex28.png" alt="" class="img-fluid mb-3">
+            <p>ถ้าเราสังเกตเนี่ยการเขียนแบบที่ 1 เนี่ยทําให้เกิดสิ่งที่เรียกว่า nested condition ครับหรือก็คือ เงื่อนไขในเงื่อนไขลองคิดภาพถ้าเรามีเงื่อนไขเป็นร้อยๆแล้วมันซ้อนกันเป็นขั้นบรรไดแบบนี้สิครับ นรกชัดๆ
+                ดังนั้นถ้าหากเราใช้ elif เนี่ยจะช่วยให้โค้ดของเราเนี่ยมีความสวยงามและเข้าใจง่ายมากขึ้นกว่าเดิมเยอะเลยครับ
+            </p>
+            <p>เรามาดูตัวอย่างการใช้ Condition กันอีกสักรอบครับ ตามนี้เลย</p>
+            <img src="images/ex29.png" alt="" class="img-fluid mb-3"> <img src="images/ex30.png" alt="" class="img-fluid mb-3">
+            <p><b>ข้อควรระวัง</b> : เราไม่สามารถที่จะใช้ else หรือ elif ก่อน if ได้นะครับ</p>
 
         </h5>
         <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="loop">Loop</h1>
