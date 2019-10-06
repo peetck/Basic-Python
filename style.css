@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:200&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
+
 html, body{
     height: 100%;
     width: 100%;
 }
+
 #home{
     height: 100%;
     width: 100%;
