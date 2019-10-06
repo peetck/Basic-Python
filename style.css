@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    word-wrap: break-word;
 }
 
 html, body{
@@ -9,7 +10,7 @@ html, body{
     width: 100%;
 }
 
-#home{
+#index-page{
     height: 100%;
     width: 100%;
 }
@@ -18,6 +19,11 @@ html, body{
     padding-top: 56px;
 }
 
+#index-body{
+    background-image: url("111.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .kanit{
     font-family: 'Kanit', sans-serif;
