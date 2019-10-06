@@ -18,15 +18,15 @@ html, body{
     font-family: 'Kanit', sans-serif;
 }
 
-#install, #operators{
+#install, #operators, #loop, #list{
     background-color: #FFA69E;
 }
 
-#data-type, #boolean-condition{
+#data-type, #function, #string{
     background-color: #A5FFD6;
 }
 
-#input-output, #loop{
+#input-output, #boolean-condition, #string-format{
     background-color: #84DCC6;
 }
 
