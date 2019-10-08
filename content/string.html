@@ -41,61 +41,108 @@
     <div class="container-fluid kanit p-0 m-0">
             <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="string">String</h1>
             <h5 class="p-5 mb-1">
-                    <p><b>String คืออะไร?</b></p>
-                    <p><b>String</b> คือลำดับหรือกลุ่มของตัวอักษรที่ ซึ่งใน Python จะอยู่ภายใต้ (<b>" "</b>) หรือ (<b>' '</b>) เท่านั้น</p>
-                    <p>---------ใส่รูป-----------</p>
-                    <p><b>String สามารถ + หรือ * ได้</b> ถึงแม้ String จะไม่ใช่ตัวเลขแต่ก็สามารถ + หรือว่า * กันได้เช่น</p>
-                    <p>---------ใส่รูป-----------</p>
+                    <p><b>String</b> คือลำดับหรือกลุ่มของตัวอักษรที่ ซึ่งใน Python จะอยู่ภายใต้ (<b>" "</b>) หรือ (<b>' '</b>) เท่านั้นครับ</p>
+                    <p><b>String สามารถ + หรือ * ได้ครับ</b> โดยจะ + ได้แค่กับ String ด้วยกันเท่านั้นครับและจะ * ได้กับแค่ตัวเลขเท่านั้นครับ</p>
+                    <img src="../images/ex62.png" alt="" class="img-fluid mb-3"> <img src="../images/ex63.png" alt=""
+                    class="img-fluid mb-3">
                     <p><b>Index String</b></p>
-                    <p>เราสามารถเลือกว่าจะเข้าถึง ตัวอักษรใน String ตัวไหนลำดับที่เท่าไรได้ผ่าน Index โดยใช้ []</p>
-                    <p>---------ใส่รูป-----------</p>
+                    <p>เราสามารถเลือกว่าจะเข้าถึง ตัวอักษรใน String ตัวไหนลำดับที่เท่าไรได้ครับผ่านทาง Index โดยใช้ []</p>
+                    <img src="../images/ex64.png" alt="" class="img-fluid mb-3"> <img src="../images/ex65.png" alt=""
+                    class="img-fluid mb-3">
+                    <p>ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex66.png" alt="" class="img-fluid mb-3"> <img src="../images/ex67.png" alt=""
+                    class="img-fluid mb-3">
                     <p><b>Slicing Strings</b></p>
-                    <p>เราสามารถกำหนดขอบเขตการเข้าถึง String ได้โดยใช้ การ Slice โดยกำหนดขอบเขตให้มันเช่น <b>[start : stop : step]</b></p>
-                    <p>---------ใส่รูป-----------</p>
+                    <p>เราสามารถกำหนดขอบเขตการเข้าถึง String ได้ครับโดยใช้การ Slice โดยกำหนดขอบเขตให้มันครับโดยใช้ <b>[start : stop : step]</b></p>
+                    <p>โดยหากเราไม่ใส่ start ค่าจะเป็น 0 หากเราไม่ใส่ stop จะเป็น ขนาดของ String และ step จะเป็น 1 ครับ</p>
+                    <p>ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex68.png" alt="" class="img-fluid mb-3"> <img src="../images/ex69.png" alt=""
+                    class="img-fluid mb-3">
                     <p><b>String method</b></p>
-                    <p>String จะมี method สำหรับจัดการข้อมูลและอำนวยความสะดวกในการเขียนโปรแกรมเป็นอย่างมาก และยังช่วยลดเวลาในการเขียนโปรแกรม เราสามารถเรียกใช้โดย พิมพ์ (.) หลัง String แล้วตามด้วยชื่อ method เช่น</p>
-                    <p><b>String method มีอะไรบ้างตัวอย่าง เช่น</b></p>
-                    <ul>
-                            <li><b>.upper()</b> ทำการเปลี่ยนตัวพิมพ์เล็กเป็นตัวพิมพ์ใหญ่</li>
-                            <li><b>.lower()</b> ทำการเปลี่ยนตัวพิมพ์ใหญ่เป็นตัวพิมพ์เล็ก</li>
-                            <li><b>.swapcase()</b> เปลี่ยนพิมพ์เล็กเป็นใหญ่ พิมพ์ใหญ่เป็นเล็ก</li>
-                            <li><b>.capitalize()</b> เปลี่ยนตัวแรกให้เป็นตัวพิมพ์ใหญ่</li>
-                            <li><b>.title()</b> เปลี่ยนให้เป็นเหมือน title</li>
-                            <li><b>.find()</b> หาตำแหน่งของคำใน string (จะเอาอันที่เจอก่อน)</li>
-                            <li><b>.replace()</b> แทนที่คำด้วยคำที่เรากำหนดเอง</li>
-                            <li><b>.count()</b> นับว่าใน string มีคำนี้กี่คำ</li>
-                            <li><b>.isalnum()</b> เช็คว่ามีตัวอักษรหรือตัวเลข หรือเปล่า</li>
-                            <li><b>.isalpha()</b> เช็คว่าทุกตัวเป็น alphabet หรือป่าว</li>
-                            <li><b>.isupper()</b> เช็คว่าทุกตัวเป็นพิมพ์ใหญ่รึป่าว</li>
-                            <li><b>.islower()</b> เช็คว่าทุกตัวเป็นพิมพ์เล็กรึป่าว</li>
-                            <li><b>.isdigit()</b> เช็คว่าทุกตัวเป็นตัวเลขรึป่าว</li>
-                            <li><b>.center()</b> padding ด้วยคำและขนาดที่ต้องการ</li>
-                            <li><b>.strip()</b> ลบคำซ้ายขวา</li>
-                            <li><b>.lstrip() </b> ลบคำแต่ด้านซ้าย</li>
-                            <li><b>.rstrip()</b> ลบคำแต่ด้านขวา</li>
-                        </ul>
-                        <p>ยังมี method อีกมากมายที่เรายังไม่ได้พูดถึง สามรถดูเพิ่มเติมได้ที่<a
+                    <p>String จะมี method สำหรับจัดการข้อมูลครับและอำนวยความสะดวกในการเขียนโปรแกรมเป็นอย่างมาก และยังช่วยลดเวลาในการเขียนโปรแกรม เราสามารถเรียกใช้โดย พิมพ์ (.) หลัง String แล้วตามด้วยชื่อ method ครับ</p>
+                    <p><b>String method มีอะไรบ้างตัวอย่าง</b></p>
+                    <div class="table-responsive">
+                            <table class="table table-striped border">
+                                <thead>
+                                    <tr>
+                                        <th>String method</th>
+                                        <th>หน้าที่</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>.upper()</td>
+                                        <td>ทำการเปลี่ยนตัวพิมพ์เล็กเป็นตัวพิมพ์ใหญ่</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.lower()</td>
+                                        <td>ทำการเปลี่ยนตัวพิมพ์ใหญ่เป็นตัวพิมพ์เล็ก</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.swapcase()</td>
+                                        <td>เปลี่ยนพิมพ์เล็กเป็นใหญ่ และพิมพ์ใหญ่เป็นเล็ก</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.capitalize()</td>
+                                        <td>เปลี่ยนตัวแรกให้เป็นตัวพิมพ์ใหญ่</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.find()</td>
+                                        <td>หาตำแหน่งของคำใน string (จะเอาอันที่เจอก่อน)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.replace()</td>
+                                        <td>แทนที่คำด้วยคำที่เรากำหนดเอง</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.count()</td>
+                                        <td>นับว่าใน string มีคำนี้กี่คำ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.isalnum()</td>
+                                        <td>เช็คว่ามีตัวอักษรหรือตัวเลข หรือเปล่า</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.isalpha()</td>
+                                        <td>เช็คว่าทุกตัวเป็น alphabet หรือป่าว</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.isupper()</td>
+                                        <td>เช็คว่าทุกตัวเป็นพิมพ์ใหญ่รึป่าว</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.islower()</td>
+                                        <td>เช็คว่าทุกตัวเป็นพิมพ์เล็กรึป่าว</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.isdigit()</td>
+                                        <td>เช็คว่าทุกตัวเป็นตัวเลขรึป่าว</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.center()</td>
+                                        <td>padding ด้วยคำและขนาดที่ต้องการ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.strip()</td>
+                                        <td>ลบคำซ้ายขวา</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.lstrip()</td>
+                                        <td>ลบคำแต่ด้านซ้าย</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.rstrip()</td>
+                                        <td>ลบคำแต่ด้านขวา</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        เรามาดูตัวอย่างการใช้งานกันครับ
+                        <img src="../images/ex70.png" alt="" class="img-fluid mb-3"> <img src="../images/ex71.png" alt=""
+                    class="img-fluid mb-3">
+                        <p>จริงๆแล้วยังมี method อีกมากมายที่เรายังไม่ได้พูดถึงครับ ซึ่งสามรถดูเพิ่มเติมได้ที่<a
                             href="https://www.w3schools.com/python/python_ref_string.asp"> Python String Methods</a></p>
-                        <p><b>ตัวอย่าง Padding and aligning strings</b></p>
-                        <p>---------ใส่รูป-----------</p>
-                        <p><b>String Example code </b></p>
-                        <ul>
-                            <li><b>String Example code 1</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>String Example code 2</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>String Example code 3</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>String Example code 4</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-    
+
                         </h5>
 
     </div>
