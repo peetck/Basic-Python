@@ -39,6 +39,123 @@
         </div>
     </nav>
     <div class="container-fluid kanit p-0 m-0">
+            <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="operators">Operators (ตัวดำเนินการ)</h1>
+            <h5 class="p-5 mb-1">
+                <p>Operators หรือตัวดำเนินการ คือสิ่งที่เอาไว้ใช้ในการกระทําการทางคณิตศาสตร์ต่างๆกับข้อมูลครับ ซึ่งในภาษา Python
+                    จะมีหลักๆอยู่ด้วยกันตามนี้เลยครับ</p>
+                <div class="table-responsive">
+                    <table class="table table-striped border">
+                        <thead>
+                            <tr>
+                                <th>การดําเนินการ</th>
+                                <th>สัญลักษณ์</th>
+                                <th>หน้าที่</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Addition</td>
+                                <td>+</td>
+                                <td>การบวก</td>
+                            </tr>
+                            <tr>
+                                <td>Subtraction</td>
+                                <td>-</td>
+                                <td>การลบ</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplication</td>
+                                <td>*</td>
+                                <td>การคูณ</td>
+                            </tr>
+                            <tr>
+                                <td>Division</td>
+                                <td>/</td>
+                                <td>การหาร</td>
+                            </tr>
+                            <tr>
+                                <td>Floor Division</td>
+                                <td>//</td>
+                                <td>หารแบบตัดเศษ</td>
+                            </tr>
+                            <tr>
+                                <td>Modulo</td>
+                                <td>%</td>
+                                <td>หารเพื่อเอาเศษ</td>
+                            </tr>
+                            <tr>
+                                <td>Exponentiation</td>
+                                <td>**</td>
+                                <td>การยกกําลัง</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>ซึ่งตัวดําเนินการพวกนี้มีไว้เพื่อให้เราสามารถ คํานวณทางคณิตศาสตร์ในโปรแกรมของเราได้ครับยกตัวอย่างเช่น</p>
+                <img src="images/ex14.png" alt="" class="img-fluid mb-3"> <img src="images/ex15.png" alt=""
+                    class="img-fluid mb-3">
+                <p>ซึ่งถ้าเราสังเกตุนะครับ หากเราทําการดําเนินการ Float กับ Int หรือ Float กับ Float เนี่ยสิ่งที่จะได้ออกมาจะกลายเป็น Float ครับ</p>
+                <p> <b>สําหรับการดําเนินการกับ String เราจะขอเก็บไว้พูดในตอนที่เป็นหัวข้อของ String นะครับ</b> </p>
+                <hr>
+                <p>ซึ่งในภาษา Python จะใช้มาตรฐานสิ่งที่เรียกกันว่า PEMDAS ครับซึ่งมันก็คือ
+                    ลําดับการกําหนดว่าจะทําอะไรก่อนอะไรหลังครับซึ่งลําดับความสําคัญจะเป็นไปตามนี้เลย</p>
+                <div class="table-responsive">
+                    <table class="table table-striped border">
+                        <thead>
+                            <tr>
+                                <th>ลําดับความสําคัญ</th>
+                                <th>การดําเนินการ</th>
+                                <th>ทิศทาง</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>วงเล็บ</td>
+                                <td>ซ้ายไปขวา</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ยกกําลัง (**)</td>
+                                <td>ขวาไปซ้าย</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>คูณ, หาร, หารแบบตัดเศษ, หารเพื่อเอาเศษ (*, /, //, %)</td>
+                                <td>ซ้ายไปขวา</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>การบวก, การลบ (+, -)</td>
+                                <td>ซ้ายไปขวา</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>ยกตัวอย่างเช่น</p>
+                <img src="images/ex16.png" alt="" class="img-fluid mb-3"> <img src="images/ex17.png" alt=""
+                    class="img-fluid mb-3">
+                <p>ลําดับของการดําเนินการในรูปแรกจะเป็นตามนี้ครับ (ตัวอักษรสีแดงจะเป็นการบอกว่าคํานวณก่อนครับ)</p>
+                <ul>
+                    <li>20 ** 2 + (2 * <span style="color: red;">(80 / 5)</span> ** 5) % 5 - 2 + 8</li>
+                    <li>20 ** 2 + (2 * <span style="color: red;">16 ** 5</span>) % 5 - 2 + 8</li>
+                    <li>20 ** 2 + <span style="color: red;">(2 * 1048576)</span> % 5 - 2 + 8</li>
+                    <li>20 ** 2 + <span style="color: red;">2097152</span> % 5 - 2 + 8</li>
+                    <li>400 + <span style="color: red;">2097152 % 5</span> - 2 + 8</li>
+                    <li><span style="color: red;">400 + 2</span> - 2 + 8</li>
+                    <li><span style="color: red;">402 - 2</span> + 8</li>
+                    <li><span style="color: red;">400 + 8</span></li>
+                    <li>408</li>
+                </ul>
+                <p>ลําดับของการดําเนินการในรูปที่สองจะเป็นตามนี้ครับ (ตัวอักษรสีแดงจะเป็นการบอกว่าคํานวณก่อนครับ)</p>
+                <ul>
+                    <li>20 + (5 + <span style="color: red;">2 * 5</span> ) / 5</li>
+                    <li>20 + <span style="color: red;">(5 + 10)</span> / 5</li>
+                    <li>20 + <span style="color: red;">15 / 5</span></li>
+                    <li><span style="color: red;">20 + 3</span></li>
+                    <li>23</li>
+                </ul>
+            </h5>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

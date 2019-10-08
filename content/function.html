@@ -39,6 +39,105 @@
         </div>
     </nav>
     <div class="container-fluid kanit p-0 m-0">
+            <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="function">Function</h1>
+            <h5 class="p-5 mb-1">
+                <p><b>ฟังก์ชัน(Function)</b> คือการแยกโค้ด(Code) ออกมาเป็นส่วนย่อยๆครับ
+                    เพื่อที่จะทําให้เราสามารถเรียกใช้ซ้ำได้โดยไม่ต้องเขียนขึ้นใหม่ในบางครั้งที่มีการทำงานแบบเดิมซ้ำๆครับ ยกตัวอย่างเช่น</p>
+                <img src="images/ex31.png" alt="" class="img-fluid mb-3">
+                <p>จากรูปนะครับ สังเกตว่าผมได้มีการคํานวนสมการที่เหมือนกันอยู่ 2 รอบครับ ซึ่งลองคิดภาพว่าเราต้องคํานวนสมการนี้สัก 10 รอบสิครับว่าจะเกิดอะไรขึ้น?</p>
+                <p>เราจึงสามารถนําสิ่งที่เรียกว่า Function มาช่วยได้ครับซึ่งมันคืออะไรเดียวมาดูกันครับ</p>
+                <hr>
+                <p>หลักการของ Function ก็คือการที่เรา โยนค่า(หรือไม่โยนก็ได้) เข้าไปแล้วจะได้รับค่ากลับมา(หรือไม่ได้รับกลับมาก็ได้)ครับ</p>
+                <p>โดย Function เนี่ยจะมีสิ่งที่เราควรจะรู้จักหลักๆอยู่ 2 อย่างครับ</p>
+                <ul>
+                    <li><b>Parameter (ตัวรับ)</b> คือ ตัวแปรที่อยู่ใน Function นั้นๆ เป็นตัวคอยรับค่าที่ถูกส่งมายัง Function ครับ</li>
+                    <li><b>Arguments (ตัวส่ง)</b> คือ ค่าหรือตัวแปรที่จะถูกส่งให้ Function ครับ</li>
+                </ul>
+                <p><b>User-Defined Fuction</b></p>
+                <p>ในการประกาศ Function เราสามารถทําได้โดยใช้ใช้คําสั่ง "def <ชื่อfunction>() :" ครับ ยกตัวอย่างเช่น</p>
+                <img src="images/ex32.png" alt="" class="img-fluid mb-3">
+                <p>จากรูปเป็นการประกาศ function ที่ชื่อว่า say_hello ครับโดยจะไม่มีการรับค่าและคืนค่าซึ่งหากเราเรียกใช้เนี่ยก็จะทําการแสดงข้อความว่า "Hello!" ออกมาครับ</p>
+                <img src="images/ex33.png" alt="" class="img-fluid mb-3">
+                <p>จากรูปเป็นการประกาศ function ที่ชื่อว่า say_hi ครับโดยจะมี Parameter 1 ตัวก็คือ name ครับและจะทําการแสดงข้อความคือ Hello ตามด้วยชื่อที่รับเข้ามาหากเรียกใช้ครับ</p>
+                <p>______รูป_______</p>
+                <p>ประเภทของ Function มีอยู่ 2 ประเภท ได้แก่ </p>
+                <ul>
+                    <li>Void function คือ function <b>ที่ไม่มีการคืนค่ากลับ</b></li>
+                    <li>Fruitful function คือ function <b>ที่มีการคืนค่ากลับ</b></li>
+                </ul>
+                <p><b>Void function</b></p>
+                <p>______รูป_______</p>
+                <p><b>Fruitful function</b></p>
+                <p>______รูป_______</p>
+                <p>ฺ<b>Built-in Function</b> คือ</p>
+                <p>function ที่ python มีให้อยู่เเล้ว เราสามารถเรียกใช้ได้เลยครับ เช่น print(), input(), int(), float(),
+                    str()</p>
+                <p><b>Built-in Function</b> มีอะไรบ้าง</p>
+                <ul>
+                    <li>abs() คือ การ absolute เช่น -5 เมื่อเราใช้ abs(-5) เราจะได้ |-5| ก็จะกลายเป็น 5 ครับ</li>
+                    <li>len() คือ การนับความยาวของ String เช่น len("Hello") เราจะได้ 5 ครับ</li>
+                    <li>min() คือ การหาค่าน้อยสุด เช่น min(5, 10, 15, -5) เราจะได้ -5</li>
+                    <li>max() คือ การหาค่ามากที่สุด เช่น min(50, 1000, -2000) เราจะได้ 1000</li>
+                    <li>type() คือ การเช็คชนิดว่าตัวนั้นเป็นตัวแปรประเภทอะไรครับ เช่น type("10") เราจะได้ str</li>
+                    <li>round() คือ การปัดเศษตัวเลข ในระบบจำนวนจริง เช่น round(4.1) เราจะได้ 4 หรือ round(4.6) เราจะได้ 5
+                    </li>
+                    <li>ord() คือ การแปลงจากตัวอักษร(1 ตัวเท่านั้น) ให้เป็นเลข ASCII เช่น ord("a") เราจะได้ 97</li>
+                    <li>chr() คือ การแปลงเลข ASCII ให้เป็นตัวอักษร เช่น chr(97) เราจะได้ "a"</li>
+                </ul>
+                <p>ตาราง ASCII Link: <a href="http://www.asciitable.com">www.asciitable.com</a></p>
+                <p>หากอยากศึกษาเกี่ยวกับ Built-in Function เพิ่มเติมสามารถกดที่ Link นี้ได้เลยครับ: <a
+                        href="https://docs.python.org/3/library/functions.html">https://docs.python.org/3/library/functions.html</a>
+                </p>
+                <p><b>Math module</b></p>
+                <p>คือ funciton ทางคณิตศาสตร์อยทีู่่ใน math module เช่น sin, cos, tan, sqrt ซึ่งเวลาเราจะใช้เราจะต้องทำการ
+                    import เข้ามาก่อนครับ การประกาศควรจะอยู่นอก function เสมอครับ</p>
+                <p>______รูป_______</p>
+                <p><b>How to call function</b></p>
+                <p>การเรียกใช้ module math หลังจากที่เรา import เเล้ว เราจะใช้ได้โดยการพิมพ์คำว่า math.(function
+                    ที่เราต้องการเรียกใช้ครับ)</p>
+                <p><b>Math function</b></p>
+                <ul>
+                    <li><b>math.ceil()</b> คือ การปัดเศษขึ้นเสมอโดยไม่สนว่าจะมากกว่า .5 หรือเปล่า เช่น math.ceil(5.1)
+                        เราจะได้ 6</li>
+                    <li><b>math.floor()</b> คือ การปัดเศษลงเสมอ เช่น math.floor(5.7) เราจะได้ 5</li>
+                    <li><b>math.sqrt()</b> คือ การหา sqrt เช่น math.sqrt(4) เราจะได้ 2.0</li>
+                    <li><b>math.pi()</b> คือ การหาค่า pi เช่น math.pi เราจะได้ 3.141592653589793</li>
+                    <li><b>math.pow(x, y)</b> คือ การยกกำลัง เช่น math.pow(2, 4) เราจะได้ 16.0</li>
+                    <li><b>math.factorial()</b> คือ การหา factorial เช่น math.factorial(10) เราจะได้ 3628800</li>
+                    <li><b>math.radians()</b> คือ การแปลงจากค่า องศาเป็น radians เช่น math.radians(30) เราจะได้
+                        0.5235987755982988</li>
+                    <li><b>math.degrees()</b>คือ การแปลงจากค่า radians เป็น องศา เช่น math.degrees(1) เราจะได้
+                        57.29577951308232</li>
+                </ul>
+                <p><b>Math function (trigonometry)</b></p>
+                <ul>
+                    <li><b>math.sin()</b> คือ การหาค่า sin</li>
+                    <li><b>math.cos()</b> คือ การหาค่า cos</li>
+                    <li><b>math.tan()</b> คือ การหาค่า tan</li>
+                    <li><b>math.radians()</b> คือ การแปลงจาก degrees เป็น radians</li>
+                    <li><b>math.degrees()</b> คือ การแปลงจาก radians เป็น degrees</li>
+                </ul>
+                <p><b>Math function (trigonometry)</b></p>
+                <p>คือ math function ที่เป็น trigonometry จะรับ Arguments เป็นหน่วย radians เช่น จะหาค่าของ sin 30 องศา
+                    ต้องแปลงเป็น radians ก่อนครับ คือ math.radians(30) เราจะได้ 0.5235987755982988
+                    หรือ math.sin(math.radians(30)) เราจะได้ 0.49999999999994</p>
+                <p><b>Math function (logarithmic)</b></p>
+                <ul>
+                    <li><b>math.log(x)</b> คือ การหาค่า log base e</li>
+                    <li><b>math.log(x, base)</b> คือ การหาค่า log base คือ ค่าที่จะใส่</li>
+                    <li><b>math.log2(x)</b> คือ การหาค่า log ฐาน 2</li>
+                    <li><b>math.log10(x)</b> คือ การหาค่า log ฐาน 10</li>
+                </ul>
+                <p><b>เทคนิคของการ import</b></p>
+                <p>หากเราไม่อยากพิมพ์คำว่า math.(function) เราสามารถเปลี่ยนได้ เช่น</p>
+                <p>______รูป_______</p>
+                <p><b>เทคนิคของการ import</b></p>
+                <p>หากเราต้องการ import แค่ยาง function ของ math module สามารถทำแบบนี้ได้ครับ</p>
+                <p>______รูป_______</p>
+                <p><b>เทคนิคของการ import</b></p>
+                <p>หากเราอยาก import ทั้งหมด แต่เราไม่อยากพิมพ์ math. เราสามารถทำแบบนี้ได้ครับ</p>
+                <p>______รูป_______</p>
+            </h5>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
