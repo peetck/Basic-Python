@@ -20,13 +20,13 @@
         "<p>หากเราใส่เลขจํานวนเป็นบวก ก็จะเว้นซ้ายครับ</p>",
         "<p>หากเราใส่เลขจํานวนเป็นลบ ก็จะเว้นขวาครับ</p>",
         "<p>ยกตัวอย่างเช่น</p>",
-        "<img src=\"images/ex78.png\" alt=\"\" class=\"img-fluid mb-3\">",
+        "<img src=\"images/ex78.png\" alt=\"\" class=\"img-fluid mb-3\"> ",
         "<img src=\"images/ex79.png\" alt=\"\" class=\"img-fluid mb-3\">",
         "<p>แต่ถ้าหากเราใช้กับ Integer เราสามารถใส่ 0 ก่อนจะกําหนดขนาดได้ครับจะเป็นการเติม 0 แทนช่องว่าง ยกตัวอย่างเช่น</p>",
-        "<img src=\"images/ex80.png\" alt=\"\" class=\"img-fluid mb-3\">",
+        "<img src=\"images/ex80.png\" alt=\"\" class=\"img-fluid mb-3\"> ",
         "<img src=\"images/ex81.png\" alt=\"\" class=\"img-fluid mb-3\">",
         "<p>เรามาดูตัวอย่างการใช้งานแบบรวมๆกันอีกรอบครับ</p>",
-        "<img src=\"images/ex82.png\" alt=\"\" class=\"img-fluid mb-3\">",
+        "<img src=\"images/ex82.png\" alt=\"\" class=\"img-fluid mb-3\"> ",
         "<img src=\"images/ex83.png\" alt=\"\" class=\"img-fluid mb-3\">"
 
     ]
