@@ -13,13 +13,13 @@
         "<p><b>การใช้งานภาษา Python</b></p>",
         "<p>ในการทํางานของภาษา Python นั้นจะมีหลักๆอยู่ 2 วิธีตามนี้เลยครับ <ul><li>Interactive Mode คือการที่เราพิมพ์ Code ที่ต้องการจะรันในแต่ละบรรทัดและผลลัพธ์ก็จะออกมาตามแต่ละบรรทัดครับ</li><li>Script Mode คือการที่เรามีไฟล์ Python (.py) ที่เป็นโค้ดแล้วนํามารันครับ</li></ul></p>",
         "<p>การใช้งาน Interactive Mode ง่ายๆเลยครับเราก็เปิด CMD หรือจะเข้าตัว IDLE ที่มีมาให้หลังจากติดตั้ง Python แล้วก็ได้ครับ</p>",
-        "<img src='images/python_idle.png' alt=' class='img-fluid mb-3'> <img src='images/python_cmd.png' alt=' class='img-fluid mb-3'>",
+        "<img src='images/python_idle.png' alt='' class='img-fluid mb-3'> <img src='images/python_cmd.png' alt='' class='img-fluid mb-3'>",
         "<p>การใช้งาน Script Mode เราสามารถทําได้โดยการเปิด CMD ครับและไปที่ Directory ที่ไฟล์ของเราอยู่จากนั้นให้เราพิมพ์ 'py -3 <ชื่อไฟล์>.py' ครับจากนั้น Python ก็จะนําโค้ดที่อยู่ข้างในไฟล์นั้นมารันซึ่งหากเราใช้ IDLE ของ Python ก็สามารถรันได้โดยการกด F5 ครับ</p>",
-        "<img src='images/python_idle2.png' alt=' class='img-fluid mb-3'> <img src='images/python_cmd2.png' alt=' class='img-fluid mb-3'>",
+        "<img src='images/python_idle2.png' alt='' class='img-fluid mb-3'> <img src='images/python_cmd2.png' alt='' class='img-fluid mb-3'>",
         "<p><b>การใช้งาน CMD</b></p>",
         "<p>จะมีคําสั่งคร่าวๆประมาณนี้ครับ</p>",
         "<ul><li>คําสั่ง dir จะแสดงไฟล์หรือโฟลเดอร์ที่อยู่ในตําแหน่งที่เราอยู่ครับ</li><li>คําสั่ง cd จะเป็นการย้ายตําแหน่งเข้าไปในโฟลเดอร์หรือตําแหน่งที่เราต้องการครับ</li><li>คําสั่ง cd.. จะเป็นการย้อนกลับไปโฟลเดอร์หรือตําแหน่งก่อนหน้าครับ</li></ul>",
-        "<img src='images/cmd1.png' alt=' width='500' class='img-fluid mb-3'> <img src='images/cmd2.png' alt=' class='img-fluid mb-3'>",
+        "<img src='images/cmd1.png' alt='' width='500' class='img-fluid mb-3'> <img src='images/cmd2.png' alt='' class='img-fluid mb-3'>",
         "<p>จากรูปคือผมมีไฟล์ที่ต้องการจะรันอยู่ที่ desktop ครับผมก็เลยใช้ cd ย้าย ไปที่ desktop แล้วจึงค่อยพิมพ์ใช้งาน Python ครับ</p>"
     ]
 }
