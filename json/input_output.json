@@ -1,6 +1,7 @@
 {
     "title": "Input & Output",
     "color" : "#84DCC6",
+    "logo" : "input_output_logo.png",
     "content" : [
         "<p>Input คือการรับข้อมูลเข้ามา และ Output คือการแสดงผลลัพธ์ที่ได้ครับ</p>",
         "<ul>",

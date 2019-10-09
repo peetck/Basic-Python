@@ -1,6 +1,7 @@
 {
 "title": "Boolean & Condition",
 "color" : "#84DCC6",
+"logo" : "boolean_condition_logo.png",
 "content" : [
     "<p>ค่าความจริงในภาษา Python มีแค่ True และ False เท่านั้นเองครับ ซึ่งจริงๆแล้วข้อมูลประเภทอื่นก็เป็นค่าความจริงเหมือนกันโดย</p>",
     "<ul>",
