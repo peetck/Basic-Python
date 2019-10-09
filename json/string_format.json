@@ -1,5 +1,5 @@
 {
-    "title": "Data Type & Varieble",
+    "title": "String Format",
     "content" : [
         "<p>ในบางครั้งเราสามารถแสดงผล String ได้ด้วยการ Format ครับ โดยใช้เครื่องหมาย % เพื่อที่จะให้ออกมาตามที่เราต้องการครับ โดยจะมีรูปแบบ % ดังนี้เลย</p>",
         "<div class=\"table-responsive\">",
