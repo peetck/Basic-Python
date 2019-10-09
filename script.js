@@ -16,6 +16,7 @@ function show(json) {
     let title_msg = json.title;
     let title = document.getElementById("title");
     title.innerHTML = title_msg;
+    title.style.backgroundColor = json.color;
     content.innerHTML = "";
     for (let i = 0; i < json.content.length; i++) {
         content.innerHTML += json.content[i];
