@@ -1,5 +1,6 @@
 {
     "title": "Installation (การติดตั้ง)",
+    "color": "#FFA69E",
     "content" : [
         "<p>ในการติดตั้งภาษา Python นั้นง่ายมากๆเลยครับวิธีการคือให้เราเข้าไปที่เว็บไซต์ <a href='https://www.python.org/'>python.org</a> ครับจากนั้นไปที่หน้า Download และเลือกเวอร์ชั่นและระบบปฏิบัติการที่ต้องการครับ (เนื้อหาในเว็บไซต์นี้จะเป็น Python 3.7.4)</p>",
         "<img src='images/install.png' alt='can't load install.png' class='img-fluid mb-3'>",

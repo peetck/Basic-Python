@@ -1,5 +1,6 @@
 {
     "title": "Input & Output",
+    "color" : "#84DCC6",
     "content" : [
         "<p>Input คือการรับข้อมูลเข้ามา และ Output คือการแสดงผลลัพธ์ที่ได้ครับ</p>",
         "<ul>",

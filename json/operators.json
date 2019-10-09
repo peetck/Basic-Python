@@ -1,5 +1,6 @@
 {
     "title": "Operators",
+    "color" : "#FFA69E",
     "content" : [
         "<p>Operators หรือตัวดำเนินการ คือสิ่งที่เอาไว้ใช้ในการกระทําการทางคณิตศาสตร์ต่างๆกับข้อมูลครับ ซึ่งในภาษา Python จะมีหลักๆอยู่ด้วยกันตามนี้เลยครับ</p>",
         "<div class=\"table-responsive\"> <table class=\"table table-striped border\"><thead><tr><th>การดําเนินการ</th><th>สัญลักษณ์</th><th>หน้าที่</th></tr></thead><tbody><tr><td>Addition</td><td>+</td><td>การบวก</td></tr><tr><td>Subtraction</td><td>-</td><td>การลบ</td></tr><tr><td>Multiplication</td><td>*</td><td>การคูณ</td></tr><tr><td>Division</td><td>/</td><td>การหาร</td></tr><tr><td>Floor Division</td><td>//</td><td>หารแบบตัดเศษ</td></tr><tr><td>Modulo</td><td>%</td><td>หารเพื่อเอาเศษ</td></tr><tr><td>Exponentiation</td><td>**</td><td>การยกกําลัง</td></tr></tbody></table></div>",

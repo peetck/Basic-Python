@@ -1,5 +1,6 @@
 {
     "title": "Data Type & Varieble",
+    "color": "#A5FFD6",
     "content" : [
         "<p>ก่อนที่เราจะไปรู้จักกับตัวแปรเราต้องรู้จักกับ ชนิดของข้อมูลใน ภาษา Python กันก่อนครับซึ่งหลักๆจะมีตามนี้เลย</p>",
         "<div class='table-responsive'>",

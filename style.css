@@ -28,16 +28,3 @@ html, body{
 .kanit{
     font-family: 'Kanit', sans-serif;
 }
-
-#install, #operators, #loop, #list{
-    background-color: #FFA69E;
-}
-
-#data-type, #function, #string{
-    background-color: #A5FFD6;
-}
-
-#input-output, #boolean-condition, #string-format{
-    background-color: #84DCC6;
-}
-
