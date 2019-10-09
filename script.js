@@ -1,6 +1,6 @@
 load("installation");
 function load(select){
-    let requestURL = '../json/' + select + '.json';
+    let requestURL = 'json/' + select + '.json';
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {

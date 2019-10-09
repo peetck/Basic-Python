@@ -42,143 +42,113 @@
             <h1 class="jumbotron jumbotron-fluid pl-5 mb-2" id="list">List</h1>
             <h5 class="p-5 mb-1">
                     <p><b>List คืออะไร?</b></p>
-                <p><b>List</b> ให้เรามองว่าเป็นเหมือนกล่องๆหนึ่งที่เราสามารถใส่ชนิดตัวแปรหลากหลายชนิดลงไปเก็บไว้ได้
-                    โดยจะคั่นแต่ละ items ใน list ด้วยเครื่องหมาย <b>,</b> </p><p>และจะถูกครอบด้วย <b>[</b> และ <b>]</b> ค่าของแต่ละตัวใน list สามารถเปลี่ยนแปลงไดhไม่เหมือนกับ String ถ้าหากเคยเขียนภาษาอื่นมาบ้างมันก็คือ Array ของภาษาอื่นนั่นเอง</p>
-                    <p><b>สมาชิคของ List</b></p>
-                    <p>---------ใส่รูปนะไอควาย--------</p>
-                    <p><b>Create a list</b></p>
-                    <p>วิธีประกาศ List ก็ง่ายๆตามนี้ครับ</p>
-                    <p>------กูบอกให้ใส่รูปไงไอควาย-------</p>
-                    <p><b>***หมายเหตุ*** ตัวแปร b ไม่ใช่ list เป็นแค่ตัวแปรที่เก็บ type ชื่อ list ไว้เฉยๆ</b></p>
-                    <p><b>List สามารถ + หรือว่า * ได้</b></p>
-                    <ul>
-                            <li>List สามารถ + กันได้ (ต้องเป็น list กับ list)</li>
-                            <li>List สามารถ * กันได้ (คล้ายๆ string)</li>
-                        </ul>
-                        <p>------ยังไม่ใส่รูปอีก-------</p>
-                    <p><b>Access Items in list</b></p>
-                    <p>การเข้าถึง items แต่ละตัวใน list วิธีจะคล้ายๆ String คือ การ Index ตำแหน่งของ items ที่เราต้องการ</p>
-                    <ul>
-                            <li><b>Access Items in list วิธีที่ 1 : </b>การเข้าถึง items แต่ละตัวใน list วิธีจะคล้ายๆ String คือ การ Index ตำแหน่งของ items ที่เราต้องการ
-                                 </li>
-                        </ul>
-                        <p>--------ใส่รูปอ่าาาาาา----------</p>
-                        <ul>
-                            <li><b>Access Items in list วิธีที่ 2 : </b>เราสามารถทำการ Slice list ได้เช่นเดียวกับ string เพื่อกำหนดขอบเขตที่เราต้องการ [start : stop : step]
-                                </li>
-                        </ul>
-                        <p>--------ใส่ซะทีเถอะ----------</p>
-                        <p><b>List is mutable</b></p>
-                        <p>อย่างที่บอกคือ list สามารถเปลี่ยนแปลงค่าได้ไม่เหมือน String หรือ tuple etc. โดยเราสามารถ index แล้ว = ค่าที่เราต้องการได้เลย เช่น</p>
-                        <p>---------ใส่รูป---------</p>
-                        <p><b>Loop Through a List</b></p>
-                        <p>เราสามารถ ใช้ for loop กับ list ได้ เช่น</p>
-                        <p>---------ใส่รูป---------</p>
-                        <p><b>Check if Item in list</b></p>
-                        <p>เราสามารถใช้ in กับ list ได้เหมือนกัน</p>
-                        <p>----------รูป----------</p>
-                        <p><b>วิธีเพิ่ม Items เข้า List</b></p>
-                        <ul>
-                            <li><b>วิธีที่ 1  (.append) : </b>หากเราอยากเพิ่มอะไรบางอย่างเข้าไปใน list เราสามารถทำได้โดยการเรียกใช้ method ของ list ที่มีชื่อว่า <b>.append()</b> <br>โดยมันจะนำไปต่อท้ายใน list</li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-                        <ul>
-                            <li><b>วิธีที่ 2  (.extend) : </b><b> .extend()</b> จะมีข้อแตกต่างจาก <b>.append()</b> ตรงที่เราต้องใส่อะไรที่เป็น iterable และมันจะกระจายเข้าไปต่อท้ายใน list ให้</li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-                        <ul>
-                            <li><b>วิธีที่ 3  (.insert) : </b><b> .insert()</b> จะเป็นการเพิ่มโดยที่เราสามารถบอกได้ว่าจะให้เพิ่มตรงตำแหน่งไหน <b>(ถ้า append & extend มันจะนำไปต่อท้าย)</b></li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>วิธีลบ Items ออกจาก List</b></p>
-                        <ul>
-                            <li><b>วิธีที่ 1  (.remove)</b> : เราสามารถใช้ method ที่ชื่อว่า <b>.remove()</b> เพื่อลบได้</li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-                        <ul>
-                            <li><b>วิธีที่ 2  (.pop) : </b><b>.pop()</b> จะแตกต่างจาก remove ตรงที่เราสามารถลบได้จากตำแหน่งของ items นั้น <b>( .pop() จะทำการ return ค่าที่ pop ออกมาด้วย )</b></li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>วิธี Copy List</b></p>
-                        <ul>
-                            <li><b>วิธีที่ 1  (.copy)</b> : การที่เราจะ copy list นั้นเราไม่สามารถบอกให้ list a = list b ได้เพราะว่าหากเราบอกแบบนี้ถ้าเราเปลี่ยนแปลงค่าใน b ค่าใน a จะเปลี่ยนตามไปด้วย เราจึงต้องใช้ method ของ list ที่ชื่อว่า .copy()</li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-                        <ul>
-                            <li><b>วิธีที่ 2  (list) : </b>อีกวิธีนึงคือใช้ built-in function ที่ชื่อว่า list() เหมือนเวลาเราประกาศ list ได้เลย</li>
-                        </ul>
-                        <p>---------ใส่รูป-----------</p>
-                        <p><b>ความแตกต่างระหว่าง list(str) และ [str]</b></p>
-                        <ul>
-                            <li>หากเรา <b>list(str)</b> มันจะเหมือนกับการที่เรามี list เปล่า แล้วเรา extend string เข้าไป</li>
-                            <li>หากเรา <b>[str]</b> มันจะเหมือนกับการที่เรา append นั่นเอง</li>
-                        </ul>
-                        <p>-------picture------</p>
-                        <p><b>เราสามารถใช้ len() กับ List ได้</b></p>
-                        <p>เราสามารถใช้ built-in function <b>len()</b> กับ list ได้เช่นกัน</p>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>เราสามารถใช้ max(), min() กับ List ได้</b></p>
-                        <p>เราสามารถใช้ built-in function <b>max() min() </b>กับ list ได้เช่นกัน</p>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>เราสามารถใช้ list() กับ range() ได้</b></p>
-                        <p>เราสามารถใช้ built-in function <b>list()</b> กับ <b>range()</b> ได้เช่นกัน</p>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>เราสามารถใช้ split() เพื่อเปลี่ยน String เป็น List ได้</b></p>
-                        <p>String มี method ตัวนึงที่ชื่อว่า <b>.split()</b> มันสามารถเปลี่ยนจาก String เป็น list ได้โดยแบ่งได้ด้วยคำที่ต้องการหากไม่ใส่ค่า default ของมันคือ ช่องว่าง</p>
-                        <p>---------ใส่รูป-----------</p>
-    
-                        <p><b>List Methods</b></p>
-                        <p>คราวนี้เรามาดู list method ดีกว่าว่ามีอะไรบ้างวิธีเรียกใช้ก็อย่างที่รู้กันครับ list[].methods() </p>
-                        <ul>
-                            <li><b>.append()</b> ทำการเพิ่ม(ต่อท้าย)เข้าไปใน list</li>
-                            <li><b>.extend()</b> ทำการเพิ่มเหมือนกัน (อธิบายไปในหน้าก่อนๆ ข้างต้น)</li>
-                            <li><b>.clear()</b> ทำการลบทุกตัวใน list (ทำให้เป็น list เปล่าๆ)</li>
-                            <li><b>.copy()</b> อย่างที่บอกไปคือเอาไว้ copy list</li>
-                            <li><b>.count()</b> คล้ายๆ string เป็นการนับว่ามี Items ใน list กี่ตัว</li>
-                            <li><b>.index()</b> คล้ายๆ .find() ของ String จะทำการเริ่มหาจากซ้ายไปขวาและบอกตำแหน่งแรกที่เจอมา</li>
-                            <li><b>.insert()</b> ทำการเพิ่ม Items โดยกำหนดตำแหน่งที่ต้องการเพิ่ม Items ได้</li>
-                            <li><b>.pop()</b> ลบไอเท็มใน list ออกโดยกำหนดจาก index (จะ return ค่าที่ลบออกมาด้วย)</li>
-                            <li><b>.remove()</b> ลบไอเท็มใน list ออกโดยกำหนดจากค่า</li>
-                            <li><b>.reverse()</b> เป็นการย้อน list เช่นจาก [1, 2, 3] เป็น [3, 2, 1]</li>
-                            <li><b>.sort()</b> เป็นการเรียง list จะอธิบายในลำดับต่อๆไป</li>
-    
-                        </ul>
-                        <p><b>Sort list</b></p>
-                        <p><b>แบบที่ 1 .sort()</b> จะมี ค่าให้เราใส่ สองค่า คือ reverse และ key โดยที่ค่า default ของ reverse คือ False (น้อยไปมาก) ส่วน key คือเราสามารกำหนดได้ว่าจะเรียงจากอะไร</p>
-                        <p>-------รูป------</p>
-                        <p><b>หากเราอยากได้ค่าจาก มากไปน้อย</b></p>
-                        <p>-------รูป------</p>
-                        <p><b>ส่วน key เราสามารถใส่เป็น function ที่เราเขียนเองหรือ built-in function ก็ได้ เช่น</b></p>
-                        <p>-------รูป------</p>
-                        <p><b>แบบที่ 2 Sorted()</b> Sorted เป็น built-in function หลักการทำงานเหมือนกับ sort แต่ต่างกันตรงที่ sort เป็น method และจะเปลี่ยนแปลงตัวเองแต่ sorted จะท าการเรียง และ return ออกมาเป็นอีก list นึง</p>
-                        <p>-------รูป------</p>
-                        <p><b>List Example code </b></p>
-                        <ul>
-                            <li><b>List Example code 1</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>List Example code 2</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>List Example code 3</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>List Example code 4</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
-                        <ul>
-                            <li><b>List Example code 5</b></li>
-                        </ul>
-                        <p>-------รูป------</p>
+                    <p><b>List</b> เนี่ยให้เรามองว่าเป็นเหมือนกล่องๆหนึ่งครับที่เราสามารถใส่ชนิดข้อมูลหลากหลายชนิดลงไปเก็บไว้ได้ โดยจะคั่นแต่ละ items ใน list ด้วยเครื่องหมาย <b>,</b> และจะถูกครอบด้วย <b>[</b> และ <b>]</b> ค่าของแต่ละตัวใน list สามารถเปลี่ยนแปลงไดhไม่เหมือนกับ String</p>
+                    <p><b>ยกตัวอย่างเช่น</b></p>
+                    <img src="../images/ex84.png" alt="" class="img-fluid mb-3">
+                    <p>อย่างในรูปนี่หมายความเป็น ตัวแปร my_list เป็น list ที่มีสมาชิก 5 ตัวครับ</p>
+                    <p><b>วิธีสร้าง List</b></p>
+                    <p>สามารถทําได้หลักๆอยู่ 3 แบบครับ</p>
+                    <ul><li>ใช้เครื่องหมาย []</li><li>list()</li><li>[..สมาชิกแต่ละตัว..]</li></ul>
+                    <p>ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex85.png" alt="" class="img-fluid mb-3"> <img src="../images/ex86.png" alt="" class="img-fluid mb-3">
 
+                    <p><b>เราสามารถ + หรือ * List ได้ครับโดยที่</b></p>
+                    <ul><li>List สามารถ + กันได้จะต้องเป็น list กับ list เท่านั้น</li><li>List สามารถ * กันได้จะต้องเป็น list กับ int เท่านั้น</li></ul>
+                    <p>ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex87.png" alt="" class="img-fluid mb-3"> <img src="../images/ex88.png" alt="" class="img-fluid mb-3">
+                    <p><b>การเข้าถึง Items ใน List</b></p>
+                    <p>การเข้าถึง items แต่ละตัวใน list วิธีจะคล้ายๆกับ String ครับคือ การ Index ตำแหน่งของ items ที่เราต้องการและเรายังสามารถ Slicing ได้อีกด้วยครับ ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex89.png" alt="" class="img-fluid mb-3"> <img src="../images/ex90.png" alt="" class="img-fluid mb-3">
+                    <p><b>List is mutable</b></p>
+                    <p>List สามารถเปลี่ยนแปลงค่าได้ครับไม่เหมือนกับ String โดยเราสามารถ index แล้ว = ค่าที่เราต้องการได้เลยครับ เช่น</p>
+                    <img src="../images/ex91.png" alt="" class="img-fluid mb-3"> <img src="../images/ex92.png" alt="" class="img-fluid mb-3">
+                    <p>เรายังสามารถใช้ Loop กับ List ได้ครับ ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex93.png" alt="" class="img-fluid mb-3"> <img src="../images/ex94.png" alt="" class="img-fluid mb-3">
+                    <p>เรายังสามารถใช้ In เช็คว่ามีสมาชิกตัวนั้นอยู่ใน List หรือเปล่าก็ได้ครับ ยกตัวอย่างเช่น</p>
+                    <img src="../images/ex95.png" alt="" class="img-fluid mb-3"> <img src="../images/ex96.png" alt="" class="img-fluid mb-3">
+                    <p><b>การเพิ่ม สมาชิกเข้าไปใน List</b></p>
+                        <ul>
+                            <li><b>วิธีที่ 1  (.append) : </b>คือการนําสมาชิกที่เพิ่มเข้าไปต่อท้ายใน list ครับ</li>
+
+                        </ul>
+                        <img src="../images/ex97.png" alt="" class="img-fluid mb-3"> <img src="../images/ex98.png" alt="" class="img-fluid mb-3">
+                        <ul>
+                            <li><b>วิธีที่ 2  (.extend) : </b>จะมีข้อแตกต่างจาก .append()> ตรงที่เราต้องใส่อะไรที่เป็น iterable(เช่น list, string) และมันจะกระจายสมาชิกแต่ละตัวเข้าไปต่อท้ายใน list ให้ครับ</li>
+                        </ul>
+                        <img src="../images/ex99.png" alt="" class="img-fluid mb-3"> <img src="../images/ex100.png" alt="" class="img-fluid mb-3">
+                        <ul>
+                            <li><b>วิธีที่ 3  (.insert) : </b> จะเป็นการเพิ่มโดยที่เราสามารถกําหนดตําแหน่งได้ว่าจะให้เพิ่มตรงตำแหน่งไหนครับ (ถ้า append & extend จะเป็นการนำไปต่อท้าย)</li>
+                        </ul>
+                        <img src="../images/ex101.png" alt="" class="img-fluid mb-3"> <img src="../images/ex102.png" alt="" class="img-fluid mb-3">
+                    <p><b>วิธีลบสมาชิกออกจาก List</b></p>
+                        <ul>
+                            <li><b>วิธีที่ 1  (.remove) : </b> หากอยากอยากลบสมาชิกที่มีค่าเป็นอะไรก็กําหนดได้เลยครับ</li>
+                        </ul>
+                        <img src="../images/ex103.png" alt="" class="img-fluid mb-3"> <img src="../images/ex104.png" alt="" class="img-fluid mb-3">
+                        <ul>
+                            <li><b>วิธีที่ 2  (.pop) : </b>จะแตกต่างจาก remove ตรงที่เราสามารถลบได้จากตำแหน่งของสมาชิกนั้นครับ และจะทําการคืนค่าออกมาด้วย</li>
+                        </ul>
+                        <img src="../images/ex105.png" alt="" class="img-fluid mb-3"> <img src="../images/ex106.png" alt="" class="img-fluid mb-3">
+                    <p><b>วิธีการ Copy List</b></p>
+                        <ul>
+                            <li><b>วิธีที่ 1  (.copy)</b> : การที่เราจะ copy list นั้นหากเราบอกให้ lista = listb หากเราบอกแบบนี้ถ้าเราเปลี่ยนแปลงค่าใน b ค่าใน a จะเปลี่ยนตามไปด้วยครับ เราจึงต้องใช้ method ของ list ที่ชื่อว่า .copy()</li>
+                        </ul>
+                        <img src="../images/ex107.png" alt="" class="img-fluid mb-3"> <img src="../images/ex108.png" alt="" class="img-fluid mb-3">
+                        <ul>
+                            <li><b>วิธีที่ 2  (list) : </b>อีกวิธีนึงคือใช้ built-in function ที่ชื่อว่า list() ครับเหมือนเวลาเราประกาศ list ได้เลย</li>
+                        </ul>
+                        <img src="../images/ex109.png" alt="" class="img-fluid mb-3"> <img src="../images/ex108.png" alt="" class="img-fluid mb-3">
+                    <p><b>ความแตกต่างระหว่าง list(str) และ [str]</b></p>
+                        <ul>
+                            <li>หากเรา <b>list(str)</b> มันจะเหมือนกับการที่เรามี list เปล่า แล้วเรา extend string เข้าไปครับ</li>
+                            <li>หากเรา <b>[str]</b> มันจะเหมือนกับการที่เรา append นั่นเองครับ</li>
+                        </ul>
+                        <img src="../images/ex110.png" alt="" class="img-fluid mb-3"> <img src="../images/ex111.png" alt="" class="img-fluid mb-3">
+                        <p><b>เราสามารถใช้ len() กับ list ได้เช่นกันครับ</b></p>
+                        <img src="../images/ex112.png" alt="" class="img-fluid mb-3"> <img src="../images/ex113.png" alt="" class="img-fluid mb-3">
+
+                        <p><b>เราสามารถใช้ max(), min() กับ List ได้เช่นกันครับ</b></p>
+                        <img src="../images/ex114.png" alt="" class="img-fluid mb-3"> <img src="../images/ex115.png" alt="" class="img-fluid mb-3">
+
+                        <p><b>เราสามารถใช้ list() กับ range() ได้</b></p>
+                        <img src="../images/ex116.png" alt="" class="img-fluid mb-3"> <img src="../images/ex117.png" alt="" class="img-fluid mb-3">
+
+
+                        <p><b>String มี method ตัวนึงที่ชื่อว่า .split() ครับมันสามารถเปลี่ยนจาก String เป็น list ได้โดยแบ่งได้ด้วยคำที่ต้องการหากไม่ใส่ค่า default ของมันคือ ช่องว่างครับ</b></p>
+                        <img src="../images/ex118.png" alt="" class="img-fluid mb-3"> <img src="../images/ex119.png" alt="" class="img-fluid mb-3">
+                        <p><b>List Methods</b></p>
+                        <div class="table-responsive">
+                            <table class="table table-striped border">
+                                <thead>
+                                    <tr>
+                                        <th>List Methods</th>
+                                        <th>หน้าที่</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>.append()</td><td>ทำการเพิ่ม(ต่อท้าย)เข้าไปใน list</td></tr>
+                                    <tr><td>.extend()</td><td>ทำการเพิ่มเหมือนกัน (อธิบายความแตกต่างไปแล้วนะครับจากข้างบนเลย)</td></tr>
+                                    <tr><td>.clear()</td><td>ทำการลบสมาชิกทุกตัวใน list (ทำให้เป็น list เปล่าๆ)</td></tr>
+                                    <tr><td>.copy()</td><td>Copy List</td></tr>
+                                    <tr><td>.count()</td><td>คล้ายๆ string เป็นการนับว่ามีสมาชิกตัวนี้ใน list อยู่กี่ตัว</td></tr>
+                                    <tr><td>.index()</td><td>คล้ายๆ .find() ของ String ครับจะทำการเริ่มหาจากซ้ายไปขวาและบอกตำแหน่งแรกที่เจอมา</td></tr>
+                                    <tr><td>.insert()</td><td>ทำการเพิ่มสมาชิกโดยกำหนดตำแหน่งที่ต้องการเพิ่มได้ครับ</td></tr>
+                                    <tr><td>.pop()</td><td>ลบไอเท็มใน list ออกโดยกำหนดจาก index (จะ return ค่าที่ลบออกมาด้วย)</td></tr>
+                                    <tr><td>.remove()</td><td>ลบไอเท็มใน list ออกโดยกำหนดจากค่าสมาชิก</td></tr>
+                                    <tr><td>.reverse()</td><td>เป็นการย้อน list ครับเช่นจาก [1, 2, 3] เป็น [3, 2, 1]</td></tr>
+                                    <tr><td>.sort()</td><td>เป็นการเรียง list จะอธิบายในหัวข้อต่อไปครับ</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><b>การเรียงลําดับสมาชิกใน List (Sort list)</b></p>
+                        <p><b>แบบที่ 1 .sort()</b> จะมี ค่าให้เราใส่ สองค่า คือ reverse และ key ครับโดยที่ค่า default ของ reverse คือ False (น้อยไปมาก) ส่วน key คือเราสามารถกำหนดได้ว่าจะเรียงจากอะไรครับ</p>
+                        <img src="../images/ex120.png" alt="" class="img-fluid mb-3"> <img src="../images/ex121.png" alt="" class="img-fluid mb-3">
+                        <p><b>หากเราอยากได้ค่าจาก มากไปน้อย</b></p>
+                        <img src="../images/ex122.png" alt="" class="img-fluid mb-3"> <img src="../images/ex123.png" alt="" class="img-fluid mb-3">
+                        <p><b>ส่วน key เราสามารถใส่เป็น function ที่เราเขียนเองก็ได้ครับหรือ built in function ก็ได้ เช่น</b></p>
+                        <img src="../images/ex124.png" alt="" class="img-fluid mb-3"> <img src="../images/ex125.png" alt="" class="img-fluid mb-3">
+                        <p><b>แบบที่ 2 Sorted()</b> Sorted เป็น built-in function ครับหลักการทำงานเหมือนกับ sort แต่ต่างกันตรงที่ sort เป็น method และจะเปลี่ยนแปลงตัวเองครับแต่ sorted จะทําการเรียง และ return ออกมาเป็นอีก list นึงครับ</p>
+                        <img src="../images/ex126.png" alt="" class="img-fluid mb-3"> <img src="../images/ex127.png" alt="" class="img-fluid mb-3">
                     </h5>
 
     </div>
