@@ -18,7 +18,9 @@ function show(json) {
     title.innerHTML = title_msg + "&nbsp;&nbsp;&nbsp;" + "<img class='img-fluid' width='100' src='images/" + json.logo + "'>";
     title.style.backgroundColor = json.color;
     content.innerHTML = "";
+    let temp = "";
     for (let i = 0; i < json.content.length; i++) {
-        content.innerHTML += json.content[i];
+        temp += json.content[i];
     }
+    content.innerHTML = temp;
 }
