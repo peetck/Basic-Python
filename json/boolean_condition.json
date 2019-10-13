@@ -7,7 +7,7 @@
     "<ul>",
     "<li>ค่าความจริงที่ไม่ใช่ 0 หรือ String เปล่า จะมีค่าเป็น True</li>",
     "<li>ค่าความจริงที่เป็น 0 หรือ String เปล่า จะมีค่าเป็น False</li>",
-    "<ul>",
+    "</ul>",
     "<p>เราสามารถเช็คได้จาก การใช้ Build in function ที่ชื่อว่า bool() ครับ ยกตัวอย่างเช่น</p>",
     "<div class=\"table-responsive\">",
     "<table class=\"table table-striped border\"><thead><tr><th>เรียกใช้</th><th>ผลลัพธ์</th></tr></thead><tbody><tr><td>bool(1)</td><td>True</td></tr><tr><td>bool(0.01)</td><td>True</td></tr><tr><td>bool(-1)</td><td>True</td></tr><tr><td>bool(-55)</td><td>True</td></tr><tr><td>bool(\"Hello\")</td><td>True</td></tr><tr><td>bool(\" \")</td><td>True</td></tr><tr><td>bool(0)</td><td>False</td></tr><tr><td>bool(\"\")</td><td>False</td></tr><tr><td>bool(0.00)</td><td>False</td></tr><tr><td>bool(-0)</td><td>False</td></tr></tbody></table>",
