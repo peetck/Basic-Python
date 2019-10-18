@@ -20,7 +20,7 @@ function show(json) {
     content.innerHTML = "";
     let temp = "";
     for (let i = 0; i < json.content.length; i++) {
-        temp += json.content[i];
+        temp += "<p>" + json.content[i] + "</p>";
     }
     content.innerHTML = temp;
 }
