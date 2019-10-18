@@ -20,9 +20,19 @@ html, body{
 }
 
 #index-body{
-
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .kanit{
     font-family: 'Kanit', sans-serif;
+}
+
+body{
+    animation: fadein .5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
