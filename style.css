@@ -40,3 +40,8 @@ body{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+.footer-icon:hover{
+    transform: rotate(10deg);
+    transition: .1s;
+}
