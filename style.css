@@ -29,6 +29,10 @@ html, body{
     font-family: 'Kanit', sans-serif;
 }
 
+footer{
+    background-color: #2db0fe;
+}
+
 body{
     animation: fadein .5s;
 }
