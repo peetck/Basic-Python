@@ -1,5 +1,9 @@
 load("installation");
 function load(select){
+    let title = document.getElementById("title");
+    title.innerHTML = "Loading..   <div class=\"loading-animation\"></div>";
+    let content = document.getElementById("content");
+    content.innerHTML = "<div class=\"loading-animation\"></div>";
     let requestURL = 'json/' + select + '.json';
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
