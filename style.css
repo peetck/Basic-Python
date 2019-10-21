@@ -45,3 +45,28 @@ body{
     transform: rotate(10deg);
     transition: .1s;
 }
+
+.loading_animation {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+.loading_animation:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: black transparent black transparent;
+    animation: loading_animation 1.2s linear infinite;
+}
+@keyframes loading_animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
