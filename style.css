@@ -28,7 +28,7 @@ html, body{
 
 
 #index-body{
-    background-image: url("bg.jpg");
+    background-image: url("images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -93,14 +93,17 @@ body{
 
 }
 
-.navbar-nav > li > .dropdown-menu  > .dropdown-item{
-    color: white;
-}
-
-.navbar-nav > li > .dropdown-menu  > .dropdown-item:hover{
-    background-color:  #343a40;
+.navbar-nav > li > .dropdown-menu > a{
+    background-color: #343a40;
+    color: #fff;
 
 }
+
+.navbar-nav > li > .dropdown-menu > a:hover{
+    opacity: .7;
+    transition: .2s;
+}
+
 .dropdown .dropdown-menu {
     transition: all 0.2s;
     max-height: 0;
