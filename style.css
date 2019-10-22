@@ -8,23 +8,12 @@ html{
 html, body{
     height: 100%;
     width: 100%;
-    background-image: url("images/bgg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 
 }
-.box1{
-    background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-bottom-style: none;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px 5px #242424;
 
+#content{
+    margin-left : 5%;
+    margin-right : 5%;
 }
 
 #index-page{
@@ -36,11 +25,7 @@ html, body{
     padding-top: 56px;
 }
 
-.box2{
-    background-color: #ffffff;
-    margin-bottom: 5%;
-    margin-top: 3%;
-}
+
 
 #index-body{
     background-image: url("bg.jpg");
