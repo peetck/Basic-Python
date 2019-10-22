@@ -8,6 +8,10 @@ html{
 html, body{
     height: 100%;
     width: 100%;
+    background-image: url("images/bgg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 
 }
 .box1{
