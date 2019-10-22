@@ -8,6 +8,19 @@ html{
 html, body{
     height: 100%;
     width: 100%;
+    
+}
+.box1{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 5px #242424;
+
 }
 
 #index-page{
@@ -17,6 +30,12 @@ html, body{
 
 #main{
     padding-top: 56px;
+}
+
+.box2{
+    background-color: #ffffff;
+    margin-bottom: 5%;
+    margin-top: 3%;
 }
 
 #index-body{
@@ -33,7 +52,10 @@ html, body{
     z-index: 0;
 }
 
-
+.titlekorn{
+    font-family: 'Anton', sans-serif;
+    
+}
 
 .kanit{
     font-family: 'Kanit', sans-serif;
@@ -52,8 +74,8 @@ body{
 }
 
 .footer-icon:hover{
-    transform: rotate(10deg);
-    transition: .1s;
+    transform: rotate(30deg);
+    transition: .4s;
 }
 
 .loading-animation {
