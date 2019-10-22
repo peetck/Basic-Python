@@ -112,4 +112,5 @@ body{
 .dropdown.show .dropdown-menu {
     max-height: 200px;
     opacity: 1;
+    width: 200px;
 }
