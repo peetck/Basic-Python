@@ -1,4 +1,4 @@
-## Basic-Python 
+## Basic-Python <img width="50" src="https://peetck.github.io/Basic-Python/images/py_logo.png">
 
 * เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Web Technology คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (IT KMITL)
 
