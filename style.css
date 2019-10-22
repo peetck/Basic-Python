@@ -8,7 +8,7 @@ html{
 html, body{
     height: 100%;
     width: 100%;
-    
+
 }
 .box1{
     background-color: white;
@@ -54,7 +54,7 @@ html, body{
 
 .titlekorn{
     font-family: 'Anton', sans-serif;
-    
+
 }
 
 .kanit{
@@ -101,4 +101,19 @@ body{
     100% {
       transform: rotate(360deg);
     }
+}
+
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #343a40;
+
+}
+
+.navbar-nav > li > .dropdown-menu  > .dropdown-item{
+    color: white;
+}
+
+.navbar-nav > li > .dropdown-menu  > .dropdown-item:hover{
+    background-color:  #343a40;
+
 }
