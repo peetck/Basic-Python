@@ -1,4 +1,4 @@
-load("installation");
+load("why_python");
 function load(select){
     let title = document.getElementById("title");
     title.innerHTML = "Loading..   <div class=\"loading-animation\"></div>";
