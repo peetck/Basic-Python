@@ -112,3 +112,15 @@ body{
     background-color:  #343a40;
 
 }
+.dropdown .dropdown-menu {
+    transition: all 0.2s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.show .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
