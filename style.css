@@ -55,6 +55,11 @@ body{
     to   { opacity: 1; }
 }
 
+#title > img:hover{
+    transform: rotate(20deg);
+    transition: .3s;
+}
+
 .footer-icon:hover{
     transform: rotate(30deg);
     transition: .4s;
