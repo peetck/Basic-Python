@@ -49,10 +49,10 @@
         "</table>",
         "</div>",
         "<p>ซึ่งเราสามารถกําหนดค่าตามชนิดข้อมูลข้างต้นนี้ให้กับตัวแปรได้ครับ ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex1.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex1.png' alt='' class='img-fluid mb-3'>",
         "<p>จากโค้ดข้างบนหมายความว่า<ul><li>ตัวแปร name มีค่าเป็นข้อความ(String) ว่า John</li><li>ตัวแปร age มีค่าเป็นจํานวนเต็ม(Int) คือ 5</li><li>ตัวแปร love_tree มีค่าเป็นค่าความจริง(Boolean) คือ True</li></ul></p>",
         "<p>และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex2.png' alt='' class='img-fluid mb-3'> <img src='images/ex3.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex2.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex3.png' alt='' class='img-fluid mb-3'>",
         "<p>เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ครับตามนี้เลยครับ</p>",
         "<div class='table-responsive'>",
         "<table class='table table-striped border'>",
@@ -79,8 +79,8 @@
         "</table>",
         "</div>",
         "<p>ส่วนชนิดของข้อมูลแบบอื่นๆเราจะไปลงรายละเอียดกันในหัวข้อหลังๆนะครับ</p>",
-        "<img src='images/ex4.png' alt='' class='img-fluid mb-3'> <img src='images/ex5.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex4.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex5.png' alt='' class='img-fluid mb-3'>",
         "<p><b>เราไม่สามารถแปลงข้อความที่มีตัวอักษรมากกว่าหรือเท่ากับ 1 ตัวให้เป็น int และ float ได้นะครับเพราะจํานวนเต็มและทศนิยมไม่ควรจะมีตัวอักษร ซึ่งจะส่งผลให้เกิด ValueError ครับ ยกตัวอย่างเช่น</b></p>",
-        "<img src='images/ex6.png' alt='' class='img-fluid mb-3'> <img src='images/ex7.png' alt='' class='img-fluid mb-3'>"
+        "<img src='images/ex/ex6.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex7.png' alt='' class='img-fluid mb-3'>"
     ]
 }

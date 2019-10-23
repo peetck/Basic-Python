@@ -19,7 +19,7 @@ function show(json) {
     let content = document.getElementById("content");
     let title_msg = json.title;
     let title = document.getElementById("title");
-    title.innerHTML = "<b>" + title_msg + "</b>" + "&nbsp;&nbsp;&nbsp;" + "<img class='img-fluid' width='100' src='images/" + json.logo + "'>";
+    title.innerHTML = "<b>" + title_msg + "</b>" + "&nbsp;&nbsp;&nbsp;" + "<img class='img-fluid' width='100' src='images/logo/" + json.logo + "'>";
     title.style.backgroundColor = json.color;
     content.innerHTML = "";
     let temp = "";

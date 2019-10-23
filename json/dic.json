@@ -7,16 +7,16 @@
         "ส่วน Key และ Value จะเขียนอยู่ในรูปแบบ {key:value} ครับและในแต่ละสมาชิกก็จะถูกคั่นด้วย "," เหมือนกับ List ครับยกตัวอย่างเช่น</p>",
         "<p><b>{\"name\": \"Picnic\"}</b> อย่างงี้คือผมมี Key ที่ชื่อว่า name และหากเรียกก็จะได้ คําว่า Picnic ออกมาครับ</p>",
         "<p><b>วิธีประกาศ Dictionary</b> ง่ายๆเลยครับเราสามารถทําได้โดยการใช้ {} ครับ ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex128.png' alt='' class='img-fluid mb-3'> <img src='images/ex129.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex128.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex129.png' alt='' class='img-fluid mb-3'>",
         "<p><b>วิธีเรียกใช้</b> ง่ายๆเลยครับเราสามารถเรียกได้จากชื่อตัวแปรแล้วตามด้วย [key] ครับเราก็จะได้ค่านั้นออกมาครับ</p>",
-        "<img src='images/ex130.png' alt='' class='img-fluid mb-3'> <img src='images/ex131.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex130.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex131.png' alt='' class='img-fluid mb-3'>",
         "<p><b>วิธีเพิ่ม/แก้ไขสมาชิก</b> ง่ายๆเลยครับหากเราต้องการเพิ่มหรือแก้ไขก็สามารถทําได้โดยเรียกใช้ key ได้เลยครับ</p>",
         "<p>โดยหาก key นั้นมีอยู่แล้วมันก็จะเป็นการแทนที่ครับแต่ถ้าไม่มีก็จะเป็นการเพิ่มเข้าไปครับ ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex132.png' alt='' class='img-fluid mb-3'> <img src='images/ex133.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex132.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex133.png' alt='' class='img-fluid mb-3'>",
         "<p>เราสามารถใช้ Loop กับ Dictionary ได้ครับโดยสิ่งที่จะนําออกมาก็คือ key นั้นเอง ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex134.png' alt='' class='img-fluid mb-3'> <img src='images/ex135.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex134.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex135.png' alt='' class='img-fluid mb-3'>",
         "<p>หากเราอยากได้ Value ก็สามารถทําได้โดยการเรียกใช้จาก Key ครับหรือเราจะใช้ Method ที่ชื่อว่า values ก็ได้ครับ ยกตัวอย่างเช่น</p>",
-        "<img src='images/ex136.png' alt='' class='img-fluid mb-3'> <img src='images/ex137.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex136.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex137.png' alt='' class='img-fluid mb-3'>",
         "<p>จริงๆแล้วเราสามารถทําการ เพิ่ม/ลบ หรือทําอย่างอื่นกับ Dictionary ได้มากมายเลยครับโดยผ่านการใช้ Method นั้นเองซึ่งใครสนใจเพิ่มเติมก็สามารถไปที่ลิ้งนี้ได้เลยครับ <a href=\"https://www.w3schools.com/python/python_ref_dictionary.asp\">w3schools</a></p>"
     ]
 }
