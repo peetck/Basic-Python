@@ -1,8 +1,8 @@
-## Basic-Python <img width="50" src="https://peetck.github.io/Basic-Python/images/py_logo.png">
+## Basic-Python <img width="50" src="https://peetck.github.io/Basic-Python/images/logo/py_logo.png">
 
 * เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Web Technology คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (IT KMITL)
 
-## Built With :construction: 
+## Built With :construction:
 * HTML (Hypertext Markup Language)
 * CSS (Cascading Style Sheets)
 * Bootstrap (CSS Framework)
