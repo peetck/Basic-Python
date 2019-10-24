@@ -53,6 +53,8 @@
         "จากโค้ดข้างบนหมายความว่า<ul><li>ตัวแปร name มีค่าเป็นข้อความ(String) ว่า John</li><li>ตัวแปร age มีค่าเป็นจํานวนเต็ม(Int) คือ 5</li><li>ตัวแปร love_tree มีค่าเป็นค่าความจริง(Boolean) คือ True</li></ul>",
         "และเราสามารถเรียกใช้ค่าที่อยู่ข้างในตัวแปรผ่านตัวแปรได้ครับ ยกตัวอย่างเช่น",
         "<img src='images/ex/ex2.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex3.png' alt='' class='img-fluid mb-3'>",
+        "โดยเรา<b>ห้าม</b>ตั้งชื่อตัวแปรซํ้ากับ keyword(คําสั่ง) ในภาษา Python ครับซึ่งมีตามนี้เลย",
+        "<img src='images/datatype_varieble/keyword.png' alt='' class='img-fluid mb-3'>",
         "เรายังสามารถแปลงค่าให้กับตัวแปรได้ด้วย โดยการใช้ Build in function ครับตามนี้เลยครับ",
         "<div class='table-responsive'>",
         "<table class='table table-striped border'>",

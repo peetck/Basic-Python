@@ -4,6 +4,7 @@ function load(select){
     title.innerHTML = "Loading..   <div class=\"loading-animation\"></div>";
     let content = document.getElementById("content");
     content.innerHTML = "<div class=\"loading-animation\"></div>";
+    document.title = "Loading...";
     let requestURL = 'json/' + select + '.json';
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -27,4 +28,5 @@ function show(json) {
         temp += "<p>" + json.content[i] + "</p>";
     }
     content.innerHTML = temp;
+    document.title = "Basic Python";
 }
