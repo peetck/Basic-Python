@@ -26,6 +26,8 @@
                     "<img src='images/ex/ex93.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex94.png' alt='' class='img-fluid mb-3'>",
                     "<p>เรายังสามารถใช้ In เช็คว่ามีสมาชิกตัวนั้นอยู่ใน List หรือเปล่าก็ได้ครับ ยกตัวอย่างเช่น</p>",
                     "<img src='images/ex/ex95.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex96.png' alt='' class='img-fluid mb-3'>",
+                    "รวมถึงสามารถใช้ build in function len() กัย List ได้เช่นกันครับ",
+                    "<img src='images/ex/ex158.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex159.png' alt='' class='img-fluid mb-3'>",
                     "<p><b>การเพิ่ม สมาชิกเข้าไปใน List</b></p>",
                     "<ul><li><b>วิธีที่ 1  (.append) : </b>คือการนําสมาชิกที่เพิ่มเข้าไปต่อท้ายใน list ครับ</li></ul>",
                     "<img src='images/ex/ex97.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex98.png' alt='' class='img-fluid mb-3'>",
