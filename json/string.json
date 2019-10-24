@@ -11,6 +11,8 @@
         "<img src=\"images/ex/ex64.png\" alt=\"\" class=\"img-fluid mb-3\"> <img src=\"images/ex/ex65.png\" alt=\"\" class=\"img-fluid mb-3\">",
         "<p>ยกตัวอย่างเช่น</p>",
         "<img src=\"images/ex/ex66.png\" alt=\"\" class=\"img-fluid mb-3\"> <img src=\"images/ex/ex67.png\" alt=\"\" class=\"img-fluid mb-3\">",
+        "อย่างที่บอกคือ String มีสิ่งที่เรียกว่า Index ครับแต่ String เป็น Immutable ครับซึ่งหมายความว่ามันไม่สามารถเปลี่ยนแปลงตัวเองได้ ยกตัวอย่างเช่น",
+        "<img src=\"images/ex/ex148.png\" alt=\"\" class=\"img-fluid mb-3\"> <img src=\"images/ex/ex149.png\" alt=\"\" class=\"img-fluid mb-3\">",
         "<p><b>Slicing Strings</b></p>",
         "<p>เราสามารถกำหนดขอบเขตการเข้าถึง String ได้ครับโดยใช้การ Slice โดยกำหนดขอบเขตให้มันครับโดยใช้ <b>[start : stop : step]</b></p>",
         "<p>โดยหากเราไม่ใส่ start ค่าจะเป็น 0 หากเราไม่ใส่ stop จะเป็น ขนาดของ String และ step จะเป็น 1 ครับ</p>",
