@@ -1,4 +1,5 @@
 load("why_python");
+
 function load(select){
     let title = document.getElementById("title");
     title.innerHTML = "Loading..   <div class=\"loading-animation\"></div>";
@@ -16,6 +17,7 @@ function load(select){
     request.send();
     console.log(select);
 }
+
 function show(json) {
     let content = document.getElementById("content");
     let title_msg = json.title;
@@ -29,4 +31,9 @@ function show(json) {
     }
     content.innerHTML = temp;
     document.title = "Basic Python" + " : " + title_msg;
+}
+
+function click_sound() {
+    var snd = new Audio("sound/click.mp3");
+    snd.play();
 }

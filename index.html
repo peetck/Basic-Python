@@ -7,16 +7,14 @@
     <title>Basic Python</title>
     <link rel="shortcut icon" href="images/logo/py_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body id="index-body">
-
     <div id="index-page" class="d-flex justify-content-center align-items-center">
         <div class="text-center">
             <h1 class="kanit display-2">Basic Python  </h1>
             <h2 class="kanit lead">เว็บไซต์ที่รวบรวมพื้นฐานภาษา Python สําหรับคนที่อยากเริ่มต้น</h2><br>
-            <a href="content.html"><button class="btn btn-warning kanit btn-lg">เริ่มเลย</button></a>
+            <button onclick="click_sound();" class="btn btn-warning kanit btn-lg">เริ่มเลย</button>
         </div>
     </div>
 
@@ -61,6 +59,15 @@
             เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Web Technology IT KMITL 2019
         </div>
     </footer>
+    <script>
+        function click_sound() {
+            var snd = new Audio("sound/click.mp3");
+            snd.play();
+            setTimeout(function() {
+                window.location.href = "content.html";
+            }, 100);
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
