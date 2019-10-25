@@ -34,7 +34,6 @@
         "</table>",
         "</div>",
         "เรามาดูตัวอย่างการใช้งานกันครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex146.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex147.png' alt='' class='img-fluid mb-3'>",
-        "จริงๆแล้ว Escape Character ยังมีอีกมากมายเลยครับโดยหากใครสนใจก็สามารถเข้าไปดูได้ที่ <a href='https://www.quackit.com/python/reference/python_3_escape_sequences.cfm'>quackit</a>"
+        "<img src='images/ex/ex146.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex147.png' alt='' class='img-fluid mb-3'>"
     ]
 }

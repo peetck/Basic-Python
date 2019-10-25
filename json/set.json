@@ -22,6 +22,6 @@
         "จริงๆแล้วเราสามารถใช้ pop() ในการลบได้เหมือนกันครับ(โดยจะลบและคืนค่าออกมา) เพียงแต่มันจะทําการลบตัวสุดท้ายซึ่ง set นั้นไม่มีลําดับครับทําให้เราไม่รู้ว่ามันจะลบค่าไหนออกจาก set ไป",
         "หากเราต้องการที่จะลบสมาชิกทุกตัวใน set ก็สามารถใช้ method ที่ชื่อว่า clear() ได้ครับ และหากอยากที่จะลบทิ้งไปเลยก็สามารถใช้คําสั่ง del ได้ครับ ยกตัวอย่างเช่น",
         "<img src='images/ex/ex181.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex182.png' alt='' class='img-fluid mb-3'>",
-        "โดยจริงๆแล้ว set มี methods อีกเยอะเลยครับไม่ว่าจะเป็น union() หรือ intersection() เป็นต้น โดยสามารถดูได้ที่นี้เลยครับ <a href='https://www.w3schools.com/python/python_ref_set.asp'>Click</a>"
+        "โดยจริงๆแล้ว set มี methods อีกเยอะเลยครับไม่ว่าจะเป็น union() หรือ intersection() เป็นต้น โดยหากใครสนใจสามารถดูได้ที่ <a href='https://www.w3schools.com/python/python_ref_set.asp'>w3schools</a>"
     ]
 }
