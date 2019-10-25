@@ -28,5 +28,5 @@ function show(json) {
         temp += "<p>" + json.content[i] + "</p>";
     }
     content.innerHTML = temp;
-    document.title = "Basic Python";
+    document.title = "Basic Python" + " : " + title_msg;
 }

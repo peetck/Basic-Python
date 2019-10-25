@@ -3,6 +3,22 @@
     "color" : "#FFA69E",
     "logo" : "about_us_logo.png",
     "content": [
-        "เกี่ยวกับเรา"
+        "เว็บไซต์นี้เกิดขึ้นเนื่องจาก \"พวกเราอยากที่จะสร้างเว็บไซต์ไว้ให้ความรู้สําหรับคนที่อยากเริ่มต้นเขียนโปรแกรมด้วยภาษา Python พื้นฐานเพื่อสามารถนําไปต่อยอดได้\"",
+        "โดยเว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Web Technology IT KMITL 2019",
+        "<b>เครื่องมือที่พวกเราเลือกใช้</b>",
+        "<ul>",
+        "<li>HTML (Hypertext Markup Language)</li>",
+        "<li>CSS (Cascading Style Sheets)</li>",
+        "<li>Bootstrap (CSS Framework)</li>",
+        "<li>JS (JavaScript)</li>",
+        "<li>Github (<a href='https://github.com/peetck/Basic-Python'>Link</a>)</li>",
+        "</ul>",
+        "<b>ทีมของพวกเรา</b>",
+        "<ul>",
+        "<li>นายวรภัทร ภัทรเมธาวรกุล 61070199 </li>",
+        "<li>นายวิศรุต พันธุ์ไม้ศรี 61070211 </li>",
+        "<li>นายศรัณย์ ยันตะบุษย์ 61070218 </li>",
+        "<li>นายศิรวิทย์ ยอดจิตร 61070221 </li>",
+        "</ul>"
     ]
 }
