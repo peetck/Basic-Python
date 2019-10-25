@@ -23,7 +23,7 @@
         "<img src='images/ex/ex199.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex200.png' alt='' class='img-fluid mb-3'>",
         "เราสามารถเพิ่มคําสั่งที่ชื่อว่า finally ได้ครับซึ่งหน้าที่ของมันคือ 'ไม่ว่าใน try จะเกิด Error หรือไม่เกิดก็จะมาทํา finally ในตอนท้ายเสมอครับ' ยกตัวอย่างเช่น",
         "<img src='images/ex/ex201.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex202.png' alt='' class='img-fluid mb-3'>",
-        "จริงๆแล้วยังมีอีกคําสั่งหนึ่งครับ ก็คือ raise ซึ่งหน้าที่ของมันก็คือทําให้เกิด Error ตามชนิดที่เราต้องการครับ ยกตัวอย่างเช่น",
+        "จริงๆแล้วยังมีอีกคําสั่งหนึ่งครับ ก็คือ raise ครับซึ่งหน้าที่ของมันก็คือทําให้เกิด Error ตามชนิดที่เราต้องการครับ ยกตัวอย่างเช่น",
         "<img src='images/ex/ex203.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex204.png' alt='' class='img-fluid mb-3'>"
     ]
 }
