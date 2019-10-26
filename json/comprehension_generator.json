@@ -1,8 +1,35 @@
 {
-    "title" : "Comprehension & Generator",
+    "title" : "Comprehension & Generators",
     "color" : "#84DCC6",
     "logo" : "comprehension_generator_logo.png",
     "content" : [
-
+        "<b>List Comprehension</b>",
+        "พูดง่ายๆก็คือ การสร้าง List ขึ้นมาใน Python โดยจะมี Pattern(รูปแบบ) ที่ไม่เหมือนกับปกติครับ คือ",
+        "<img src='https://www.howtoautomate.in.th/wp-content/uploads/2018/04/2018-04-18-22_38_48-Comprehensions-%E2%80%94-Python-3-Patterns-Recipes-and-Idioms.png' alt='' class='img-fluid mb-3'>",
+        "<p style='color:gray'> ขอบคุณภาพจาก howtoautomate</p>",
+        "ยกตัวอย่างเช่น",
+        "<img src='images/ex/ex225.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex226.png' alt='' class='img-fluid mb-3'>",
+        "จากรูป List first คือการที่นํา ตัวเลขแต่ละตัวใน range มาแทนเข้าไปใน List ครับ ส่วน List sec คือการที่นํา ตัวเลขแต่ละตัวไป * 2 ก่อนแล้วค่อยนํามาแทน",
+        "ซึ่งถ้าเราสังเกตมันก็คล้ายๆกับการที่เราเขียน for loop แล้วเพิ่ม(.append) เข้าไปครับ",
+        "ซึ่งโดยจริงๆแล้วเราสามารถใส่ condition ได้เหมือนกันครับ ยกตัวอย่างเช่น",
+        "<img src='images/ex/ex227.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex228.png' alt='' class='img-fluid mb-3'>",
+        "จากรูป List first คือการที่จะเอาแค่เลขที่เป็นเลขคู่ครับ(ตามเงื่อนไข % 2 == 0) ส่วน List sec คือการที่จะเอาแค่เลขที่ไม่เป็นเลขคู่ครับ(ตามเงื่อนไข % 2 != 0)",
+        "แล้วถามว่า List comprehension มันดียังไง?",
+        "ก็คงต้องตอบว่ามันเขียนได้สั้นกว่าและดูสะอาดกว่าการเขียนเต็มๆ แต่ด้วยวิธีนี้มันต้องแลกมากับการอ่านยากครับ ซึ่งเวลาเลือกใช้งานก็อาจจะต้องดูว่ากรณีไหนควรเขียนปกติกรณีไหนควรใช้ List comprehension",
+        "<b>Dict Comprehension</b>",
+        "จริงๆแล้วนอกจาก List แล้ว Dict ก็สามารถใช้งาน comprehension ได้เหมือนกันครับ(ไม่ค่อยเห็นคนนิยมใช้กัน) โดยเปลี่ยนจาก [] เป็น {} ครับ ยกตัวอย่างเช่น",
+        "<img src='images/ex/ex229.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex230.png' alt='' class='img-fluid mb-3'>",
+        "<b>Generator</b>",
+        "Generator เป็น iterators เพียงแต่เราสามารถเรียกใช้มันได้เพียง 1 ครั้งเท่านั้นครับ(ใช้แล้วทิ้งไปเลย)",
+        "โดยหากเราใช้คําสั่ง yield แทนการ return ใน function สิ่งที่มันจะให้ค่าออกมาจะให้แค่ตอนที่เรียกใช้เท่านั้นครับไม่ได้เอาออกมาทั้งหมดเลย",
+        "หมายความว่า function นั้นจะ return ออกมาเป็น generators Object ครับยกตัวอย่างเช่น",
+        "<img src='images/ex/ex231.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex232.png' alt='' class='img-fluid mb-3'>",
+        "จากโค้ดข้างบนหากเราทําการเปลี่ยนให้เป็น return list ที่เป็น [0, 1, 2] ออกมาเลยแทนการใช้ yield ครับ",
+        "ถามว่าแล้วทําไมไม่ใช้ return ไปเลย ?",
+        " เหตุผลที่เราไม่ใช่ Return เลยตรงๆ คือเรื่องของ Performance ครับบางทีเราไม่ได้อยากจะให้ข้อมูลที่จะเกิดขึ้นมาเก็บไว้ใน Memory เลย เราต้องการแค่ให้มันทํางานอย่างที่เราต้องการ ณ เวลานั้นๆ ไม่ได้ต้องการทีเดียวครับ ลองนึกภาพการดึงข้อมูลขนาดใหญ่ขึ้นมาใช้ครับ เช่น อ่านไฟล์ที่มีเป็นล้านๆบรรทัด บางทีเราไม่ได้อยากที่จะดึงมันมาทั้งหมดเพื่อเก็บไว้ใน List เลยเพราะจะเปลือง Memory มากครับเราอยากได้แค่บรรทัดที่เราต้องการตอนใช้งานเท่านั้นเราก็สามารถนํา Yield มาใช้ได้ครับ",
+        "เราสามารถสร้าง Generator ได้เองครับซึ่งวิธีจะคล้ายๆกับการทํา comprehension โดยใช้ () แทนครับยกตัวอย่างเช่น",
+        "<img src='images/ex/ex233.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex234.png' alt='' class='img-fluid mb-3'>",
+        "เนื่องจากมันเป็น generator เพราะฉะนั้นเราจึงสามารถเรียกใช้ได้ครั้งเดียว ตอนผมรันลูปรอบที่สองมันจึงไม่มีอะไรแสดงผลออกมาครับ",
+        "<b>จริงๆแล้ว comprehension นั้นทํางานได้เร็วกว่า for ครับเพราะฉะนั้นถ้าในเวลาที่เราทํางานกับข้อมูลจํานวนมาก เลือกใช้ Comprehension จะเร็วกว่า</b>"
     ]
 }
