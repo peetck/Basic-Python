@@ -1,6 +1,13 @@
+let current_page = "blank";
 load("why_python");
-
 function load(select){
+    if (select == current_page){
+        return;
+    }
+    else{
+        current_page = select;
+        console.log("Change to " + current_page);
+    }
     let title = document.getElementById("title");
     title.innerHTML = "Loading..   <div class=\"loading-animation\"></div>";
     let content = document.getElementById("content");
@@ -15,7 +22,6 @@ function load(select){
     };
     request.open("GET", requestURL, true);
     request.send();
-    console.log(select);
 }
 
 function show(json) {
