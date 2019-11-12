@@ -11,7 +11,8 @@
         "<li>CSS (Cascading Style Sheets)</li>",
         "<li>Bootstrap (CSS Framework)</li>",
         "<li>JS (JavaScript)</li>",
-        "<li>Github (<a href='https://github.com/peetck/Basic-Python'>Link</a>)</li>",
+        "<li><a href='https://github.com/peetck/Basic-Python'>Github</a></li>",
+        "<li><a href=\"https://carbon.now.sh/\">Carbon</a></li>",
         "</ul>",
         "<b>ทีมของพวกเรา</b>",
         "<ul>",
@@ -25,7 +26,6 @@
         "<li><a href=\"https://www.w3schools.com\">W3schools</a></li>",
         "<li><a href=\"https://www.flaticon.com\">Flaticon</a></li>",
         "<li><a href=\"https://www.programiz.com\">Programiz</a></li>",
-        "<li><a href=\"https://carbon.now.sh/\">Carbon</a></li>",
         "</ul>"
     ]
 }
