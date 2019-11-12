@@ -4,27 +4,27 @@
     "logo" : "tuple_logo.png",
     "content" : [
         "<b>Tuple</b> จะคล้ายๆกับ List ครับคือมี Index แต่จะแตกต่างตรงที่ Tuple นั้นไม่สามารถเปลี่ยนแปลงตัวเองได้ครับ (Immutable) โดยเครื่องหมายที่บ่งบอกว่าเป็น tuple ก็คือ \"()\" นั้นเองครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex152.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex153.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex87.png' alt='' class='img-fluid mb-3'>",
         "โดยการเข้าถึงสมาชิกใน Tuple เราสามารถทําได้โดยการ Index เหมือนกับ List เลยครับ",
-        "<img src='images/ex/ex154.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex155.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex88.png' alt='' class='img-fluid mb-3'>",
         "และเราก็ยังสามารถ Slicing ได้เหมือนกันครับ เช่น",
-        "<img src='images/ex/ex156.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex157.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex89.png' alt='' class='img-fluid mb-3'>",
         "เรายังสามารถใช้ Build in function len() กับ tuple ได้และยังสามารถใช้ for loop ในการวนเข้าไปในแต่ละสมาชิกได้ครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex160.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex161.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex90.png' alt='' class='img-fluid mb-3'>",
         "รวมถึงเรายังสามารถใช้ in เช็คได้ครับว่าใน tuple มีสมาชิกตัวนั้นหรือเปล่ารวมถึงสามารถนํา tuple 2 อันมาบวกกันได้ครับ",
-        "<img src='images/ex/ex162.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex163.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex91.png' alt='' class='img-fluid mb-3'>",
         "เนื่องจาก tuple นั้นเป็น immutable ทําให้เราไม่สามารถลบสมาชิกของ tuple ได้ครับแต่เราสามารถที่จะลบ tuple ออกไปทั้งอันได้เลยครับโดยผ่านคําสั่ง \"del\" ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex164.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex92.png' alt='' class='img-fluid mb-3'>",
         "Tuple จะมี methods หลักๆอยู่ 2 ตัวครับซึ่งก็คือ",
         "<ul>",
         "<li>count() : จะเป็นการนับว่ามีสมาชิกตัวนี้อยู่ใน tuple กี่ตัว</li>",
         "<li>index() : จะเป็นการหาว่าสมาชิกนี้อยู่ใน tuple ตําแหน่งที่เท่าไหร่ (จากซ้ายไปขวา)</li>",
         "</ul>",
         "ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex165.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex166.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex93.png' alt='' class='img-fluid mb-3'> ",
         "<b>ข้อควรระวัง</b>",
         "หากเราต้องการประกาศ tuple ที่มีสมาชิก 1 ตัว เราต้องใช้เครื่องหมาย \",\" เข้ามาช่วยครับเพื่อบอกว่าเป็น tuple ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex167.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex168.png' alt='' class='img-fluid mb-3'>"
+        "<img src='images/ex/ex94.png' alt='' class='img-fluid mb-3'>"
 
     ]
 }
