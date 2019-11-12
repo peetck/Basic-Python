@@ -121,3 +121,6 @@ body{
     opacity: 1;
     max-width: 500px;
 }
+.dropdown-menu {
+    margin-top: 0;
+  }
