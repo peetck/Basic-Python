@@ -6,7 +6,6 @@
         "<b>List Comprehension</b>",
         "พูดง่ายๆก็คือ การสร้าง List ขึ้นมาใน Python โดยจะมี Pattern(รูปแบบ) ที่ไม่เหมือนกับปกติครับ คือ",
         "<img src='https://www.howtoautomate.in.th/wp-content/uploads/2018/04/2018-04-18-22_38_48-Comprehensions-%E2%80%94-Python-3-Patterns-Recipes-and-Idioms.png' alt='' class='img-fluid mb-3'>",
-        "<p style='color:gray'> ขอบคุณภาพจาก howtoautomate</p>",
         "ยกตัวอย่างเช่น",
         "<img src='images/ex/ex124.png' alt='' class='img-fluid mb-3'>",
         "จากรูป List first คือการที่นํา ตัวเลขแต่ละตัวใน range มาแทนเข้าไปใน List ครับ ส่วน List sec คือการที่นํา ตัวเลขแต่ละตัวไป * 2 ก่อนแล้วค่อยนํามาแทน",
