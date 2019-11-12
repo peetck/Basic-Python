@@ -4,12 +4,12 @@
     "logo" : "escape_character.png",
     "content" : [
         "ปกติแล้วข้อความที่พิมพ์ป้อนให้ String มักจะแสดงผลตามที่ป้อนเข้าไปทั้งหมดใช่ไหมครับ แต่ก็มีอักษรบางตัวที่มีหน้าที่พิเศษภายในสายอักขระ ได้แก่ ' \" \\ % โดยเวลาต้องการใส่อักษรเหล่านี้ลงไปใน String จึงอาจจะมีปัญหาได้ครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex142.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex143.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex10.png' alt='' class='img-fluid mb-3'>",
         "จากรูปหากเราทําการรันจะส่งผลให้เกิด ERROR ครับเพราะโปรแกรมเนี่ยเข้าใจว่าเราจบ String ไปแล้วก่อนข้อความว่า Picnic ครับ",
         "โดยเราสามารถแก้ได้ 2 วิธีง่ายๆครับ",
         "<ul>",
-        "<li>แก้จาก Double quote ให้เป็น Single quote (หมายความว่าเราต้องครอบ String ด้วย Single quote ในทางกลับกันหากเราต้องการจะแสดง Single quote ก็ต้องครอบ String ด้วย Double quote) <br> <img src='images/ex/ex144.png' alt='' class='img-fluid mt-3 mb-3'></li>",
-        "<li>ใช้เครื่องหมาย \"\\\" <br> <img src='images/ex/ex145.png' alt='' class='img-fluid mt-3 mb-3'></li>",
+        "<li>แก้จาก Double quote ให้เป็น Single quote (หมายความว่าเราต้องครอบ String ด้วย Single quote ในทางกลับกันหากเราต้องการจะแสดง Single quote ก็ต้องครอบ String ด้วย Double quote) <br> <img src='images/ex/ex11.png' alt='' class='img-fluid mt-3 mb-3'></li>",
+        "<li>ใช้เครื่องหมาย \"\\\" <br> <img src='images/ex/ex12.png' alt='' class='img-fluid mt-3 mb-3'></li>",
         "</ul><hr>",
         "<b>Escape Character</b>",
         "โดยนอกจาก \"\\\" จะทําหน้าที่ในการแสดงตัวอักษรพิเศษบางตัวแล้วยังสามารถนําตัวอักษรบางตัวมาต่อกันแล้วจะมีความหมายพิเศษครับ ซึ่งเรียกว่า Escape Character ยกตัวอย่างเช่น",
@@ -34,6 +34,6 @@
         "</table>",
         "</div>",
         "เรามาดูตัวอย่างการใช้งานกันครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex146.png' alt='' class='img-fluid mb-3'> <img src='images/ex/ex147.png' alt='' class='img-fluid mb-3'>"
+        "<img src='images/ex/ex13.png' alt='' class='img-fluid mb-3'>"
     ]
 }
