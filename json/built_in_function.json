@@ -61,8 +61,8 @@
         "หากใครอยากรู้ว่าเลข ASCII มีอะไรบ้าง: <a href='http://www.asciitable.com'>www.asciitable.com</a>",
         "จริงๆแล้ว Built-in Function มีอีกเยอะเลยครับสามารถดูเพิ่มเติมได้ที่ Link นี้ได้เลยครับ: <a href='https://docs.python.org/3/library/functions.html'>https://docs.python.org/3/library/functions.html</a> ",
         "<b>Math module</b>",
-        "คือ funciton ทางคณิตศาสตร์ที่อยู่ใน Math module ครับเช่น sin, cos, tan, sqrt ซึ่งเวลาเราจะใช้เราจะต้องทำการ import เข้ามาก่อนครับ โดยทําการ",
-        "<img src='images/ex/ex41.png' alt='' class='img-fluid mb-3'>",
+        "คือ funciton ทางคณิตศาสตร์ที่อยู่ใน Math module ครับเช่น sin, cos, tan, sqrt ซึ่งเวลาเราจะใช้เราจะต้องทำการ import เข้ามาก่อนครับ โดยสามารถทําได้ด้วยการพิมพ์",
+        "<img src='images/ex/ex32.png' alt='' class='img-fluid mb-3'>",
         "<b>วิธีเรียกใช้</b>",
         "การเรียกใช้ module math หลังจากที่เรา import เเล้ว เราจะใช้ได้โดยการพิมพ์คำว่า math.(function ที่เราต้องการเรียกใช้)ครับ",
         "<b>Math function</b>",
@@ -180,8 +180,8 @@
         "</div>",
         "<b>เทคนิคของการ import</b>",
         "หากเราไม่อยากพิมพ์คำว่า math.(function) เราสามารถเปลี่ยนได้ครับ ยกตัวอย่างเช่น",
-        "<img src='images/ex/ex42.png' alt='' class='img-fluid mb-3'>",
+        "<img src='images/ex/ex33.png' alt='' class='img-fluid mb-3'>",
         "หากเราต้องการ import แค่บาง function ของ math module เราก็สามารถทำแบบนี้ได้ครับ",
-        "<img src='images/ex/ex43.png' alt='' class='img-fluid mb-3'>"
+        "<img src='images/ex/ex34.png' alt='' class='img-fluid mb-3'>"
     ]
 }
