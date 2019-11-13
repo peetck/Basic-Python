@@ -5,6 +5,7 @@
     "content": [
         "<b>Loop คืออะไร?</b>",
         "Loop คือการทํางานซํ้าๆครับ ยกตัวอย่างเช่น เราต้องการปริ้นข้อความว่า Hello 100 ครั้งหากเราต้องมานั่งพิมพ์คําสั่ง print() จนครบก็คงจะลําบากครับ",
+        "<img src='images/ex/ex130.png' alt='' class='img-fluid mb-3'> ",
         "เราจึงนําสิ่งที่เรียกว่า Loop มาช่วยครับ โดยใน Python Loop จะมี 2 ประเภทครับ",
         "<ul><li>While loop</li><li>For loop</li></ul>",
         "<b>While loop</b>",
